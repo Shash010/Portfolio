@@ -1,16 +1,16 @@
 :root {
-  --green: #00c853;
+  --green: #00a844;
   --green-dark: #007a32;
-  --green-dim: #1a3a1a;
-  --lime: #c8ff00;
-  --gold: #ffd740;
-  --white: #f0f8f0;
-  --dim: #5a7a5a;
-  --bg: #060909;
-  --bg2: #0a0f0a;
-  --bg3: #0f160f;
-  --border: #1a2a1a;
-  --text: #a8c8a8;
+  --green-dim: #e8f5ee;
+  --lime: #7cb800;
+  --gold: #d4960a;
+  --white: #111111;
+  --dim: #888888;
+  --bg: #ffffff;
+  --bg2: #f4f8f4;
+  --bg3: #eaeeea;
+  --border: #dde8dd;
+  --text: #555555;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -64,7 +64,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 14px 48px;
-  background: rgba(6,9,9,0.92);
+  background: rgba(255,255,255,0.95);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
 }
@@ -392,7 +392,7 @@ section {
 /* FIFA CARD */
 .fifa-card {
   width: 220px;
-  background: linear-gradient(160deg, #1a2e1a 0%, #0d1a0d 50%, #0a140a 100%);
+  background: linear-gradient(160deg, #e8f5ee 0%, #f1faf4 50%, #f8fdf9 100%);
   border: 1px solid rgba(0,200,83,0.25);
   position: relative;
   flex-shrink: 0;
@@ -443,7 +443,7 @@ section {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: radial-gradient(circle at 40% 35%, #2a4a2a, #0d1a0d);
+  background: radial-gradient(circle at 40% 35%, #c8e6c9, #e8f5ee);
   margin: 8px auto;
   display: flex;
   align-items: center;
@@ -674,7 +674,7 @@ section {
 
 /* FIFA overall widget */
 .overall-card {
-  background: linear-gradient(160deg, #1a2e1a, #0a140a);
+  background: linear-gradient(160deg, #e8f5ee, #f4faf6);
   border: 1px solid rgba(0,200,83,0.2);
   padding: 32px;
   text-align: center;
