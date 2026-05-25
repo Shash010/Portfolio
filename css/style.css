@@ -343,6 +343,7 @@ section {
   color: var(--black);
   text-align: center;
   display: block;
+  width: 100%;
   margin-bottom: 14px;
 }
 
