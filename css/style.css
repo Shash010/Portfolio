@@ -481,6 +481,8 @@ section {
 
 .about-card p + p { margin-top: 14px; }
 
+.card-yellow > p:first-child { margin-top: 38px; }
+
 .detail-rows { display: flex; flex-direction: column; gap: 18px; }
 
 .detail-row {}
