@@ -29,8 +29,7 @@
 
     <main>
       <!-- HERO -->
-      <div id="hero" style="position: relative; overflow: hidden">
-        <div class="jersey-bg">DATA</div>
+      <div id="hero">
         <div class="hero-inner">
           <div class="hero-left">
             <div class="hero-name-wrap">
@@ -49,92 +48,62 @@
             </div>
           </div>
 
-          <!-- FIFA CARD -->
-          <div class="fifa-card">
-            <div class="fc-top">
-              <div>
-                <div class="fc-rating">92</div>
-                <div
-                  style="
-                    font-family: &quot;Barlow Condensed&quot;, sans-serif;
-                    font-size: 9px;
-                    color: var(--gold);
-                    letter-spacing: 0.1em;
-                  "
-                >
-                  OVERALL
-                </div>
+          <!-- PROFILE CARD -->
+          <div class="profile-card">
+            <div class="pc-avatar">SML</div>
+            <div class="pc-name">Shashank M.L.</div>
+            <div class="pc-role">Data Engineer · MS 2026</div>
+            <div class="pc-divider"></div>
+            <div class="pc-skills">
+              <div class="pc-skill">
+                <span class="pcs-label">Python</span>
+                <span class="pcs-level level-expert">Expert</span>
               </div>
-              <div style="text-align: right">
-                <div class="fc-pos">DE</div>
-                <div class="fc-nation">IND</div>
+              <div class="pc-skill">
+                <span class="pcs-label">SQL</span>
+                <span class="pcs-level level-expert">Expert</span>
               </div>
-            </div>
-            <div class="fc-avatar">SML</div>
-            <div class="fc-name">Shashank M.L.</div>
-            <div class="fc-divider"></div>
-            <div class="fc-stats">
-              <div class="fc-stat">
-                <span class="fc-stat-num green">92</span>
-                <span class="fc-stat-lbl">PYT</span>
+              <div class="pc-skill">
+                <span class="pcs-label">Power BI</span>
+                <span class="pcs-level level-advanced">Advanced</span>
               </div>
-              <div class="fc-stat">
-                <span class="fc-stat-num gold">88</span>
-                <span class="fc-stat-lbl">SQL</span>
+              <div class="pc-skill">
+                <span class="pcs-label">ETL / Pipelines</span>
+                <span class="pcs-level level-advanced">Advanced</span>
               </div>
-              <div class="fc-stat">
-                <span class="fc-stat-num lime">85</span>
-                <span class="fc-stat-lbl">BI</span>
+              <div class="pc-skill">
+                <span class="pcs-label">ML / NLP</span>
+                <span class="pcs-level level-proficient">Proficient</span>
               </div>
-              <div class="fc-stat">
-                <span class="fc-stat-num green">84</span>
-                <span class="fc-stat-lbl">ETL</span>
-              </div>
-              <div class="fc-stat">
-                <span class="fc-stat-num gold">80</span>
-                <span class="fc-stat-lbl">ML</span>
-              </div>
-              <div class="fc-stat">
-                <span class="fc-stat-num lime">78</span>
-                <span class="fc-stat-lbl">CLD</span>
+              <div class="pc-skill">
+                <span class="pcs-label">Cloud (GCP)</span>
+                <span class="pcs-level level-proficient">Proficient</span>
               </div>
             </div>
-            <div class="fc-footer">
-              <div class="fc-avail">
+            <div class="pc-footer">
+              <div class="pc-avail">
                 <div class="pulse-dot"></div>
                 Available
               </div>
-              <div
-                style="
-                  font-family: &quot;Anton&quot;, sans-serif;
-                  font-size: 11px;
-                  color: var(--gold);
-                  letter-spacing: 0.1em;
-                "
-              >
-                IU · 2026
-              </div>
+              <div class="pc-grad">IU · 2026</div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="pitch-divider"></div>
+      <div class="section-divider"></div>
 
-      <!-- SCOUTING REPORT -->
+      <!-- ABOUT -->
       <section id="about">
         <div class="sec-label">01 — About</div>
         <h2 class="sec-title">About <em>Me</em></h2>
         <p class="sec-sub">
-          The full profile. Background, strengths, and what I bring to your
-          team.
+          The full profile. Background, strengths, and what I bring to your team.
         </p>
         <div class="about-grid">
-          <div class="report-card">
-            <div class="report-tag">Summary</div>
-            <p
-              style="color: var(--text); line-height: 1.8; margin-bottom: 16px"
-            >
+          <div class="about-card">
+            <div class="about-tag">Summary</div>
+            <p style="color: var(--text); line-height: 1.8; margin-bottom: 16px">
               I'm a Data Engineer and Analyst completing my Master's in Data
               Science at Indiana University Bloomington (GPA 3.77). I specialize
               in scalable ETL pipelines, NLP systems, and BI dashboards that
@@ -146,13 +115,13 @@
               stack, from ingestion to visualization to insights.
             </p>
           </div>
-          <div class="report-card">
-            <div class="report-tag">Details</div>
+          <div class="about-card">
+            <div class="about-tag">Details</div>
             <div style="display: flex; flex-direction: column; gap: 14px">
               <div>
                 <div
                   style="
-                    font-family: &quot;Barlow Condensed&quot;, sans-serif;
+                    font-family: 'Barlow Condensed', sans-serif;
                     font-size: 10px;
                     font-weight: 700;
                     color: var(--dim);
@@ -163,16 +132,14 @@
                 >
                   Location
                 </div>
-                <div
-                  style="font-size: 15px; font-weight: 600; color: var(--white)"
-                >
+                <div style="font-size: 15px; font-weight: 600; color: var(--white)">
                   Bloomington, IN · Open to Remote
                 </div>
               </div>
               <div>
                 <div
                   style="
-                    font-family: &quot;Barlow Condensed&quot;, sans-serif;
+                    font-family: 'Barlow Condensed', sans-serif;
                     font-size: 10px;
                     font-weight: 700;
                     color: var(--dim);
@@ -183,16 +150,14 @@
                 >
                   Specialization
                 </div>
-                <div
-                  style="font-size: 15px; font-weight: 600; color: var(--white)"
-                >
+                <div style="font-size: 15px; font-weight: 600; color: var(--white)">
                   Data Engineering · BI · NLP · ML
                 </div>
               </div>
               <div>
                 <div
                   style="
-                    font-family: &quot;Barlow Condensed&quot;, sans-serif;
+                    font-family: 'Barlow Condensed', sans-serif;
                     font-size: 10px;
                     font-weight: 700;
                     color: var(--dim);
@@ -215,7 +180,7 @@
                 <div class="pulse-dot"></div>
                 <span
                   style="
-                    font-family: &quot;Barlow Condensed&quot;, sans-serif;
+                    font-family: 'Barlow Condensed', sans-serif;
                     font-size: 14px;
                     font-weight: 700;
                     color: var(--green);
@@ -230,15 +195,14 @@
         </div>
       </section>
 
-      <div class="pitch-divider"></div>
+      <div class="section-divider"></div>
 
-      <!-- PLAYER STATS -->
+      <!-- SKILLS -->
       <section id="skills">
         <div class="sec-label">02 — Skills</div>
         <h2 class="sec-title">Core <em>Skills</em></h2>
         <p class="sec-sub">
-          Key technical strengths and delivery capabilities across the data
-          stack.
+          Key technical strengths and delivery capabilities across the data stack.
         </p>
         <div class="stats-layout">
           <div>
@@ -251,9 +215,7 @@
                   <div class="stat-bar">
                     <div class="stat-fill sf-green" style="width: 92%"></div>
                   </div>
-                  <div class="stat-sub">
-                    Pandas · Dask · NumPy · Scikit-learn
-                  </div>
+                  <div class="stat-sub">Pandas · Dask · NumPy · Scikit-learn</div>
                 </div>
               </div>
               <div class="stat-row">
@@ -263,9 +225,7 @@
                   <div class="stat-bar">
                     <div class="stat-fill sf-gold" style="width: 88%"></div>
                   </div>
-                  <div class="stat-sub">
-                    Query optimisation · DuckDB · NoSQL
-                  </div>
+                  <div class="stat-sub">Query optimisation · DuckDB · NoSQL</div>
                 </div>
               </div>
               <div class="stat-row">
@@ -285,9 +245,7 @@
                   <div class="stat-bar">
                     <div class="stat-fill sf-green" style="width: 90%"></div>
                   </div>
-                  <div class="stat-sub">
-                    Pivot tables · KPI dev · Root cause
-                  </div>
+                  <div class="stat-sub">Pivot tables · KPI dev · Root cause</div>
                 </div>
               </div>
             </div>
@@ -336,23 +294,20 @@
                 </div>
               </div>
             </div>
-            <div class="overall-card" style="margin-top: 20px">
-              <div class="overall-label">Overall Rating</div>
-              <div class="overall-num">92</div>
-              <div class="hexstats">
-                <div class="hexstat">
-                  <span class="hexstat-num" style="color: var(--green)"
-                    >1.5GB+</span
-                  ><span class="hexstat-lbl">Data Processed</span>
+            <div class="stats-card" style="margin-top: 20px">
+              <div class="sc-title">Key Impact</div>
+              <div class="key-metrics">
+                <div class="metric">
+                  <span class="metric-num" style="color: var(--green)">1.5GB+</span>
+                  <span class="metric-lbl">Data Processed</span>
                 </div>
-                <div class="hexstat">
-                  <span class="hexstat-num" style="color: var(--gold)"
-                    >120K+</span
-                  ><span class="hexstat-lbl">Records Tagged</span>
+                <div class="metric">
+                  <span class="metric-num" style="color: var(--gold)">120K+</span>
+                  <span class="metric-lbl">Records Tagged</span>
                 </div>
-                <div class="hexstat">
-                  <span class="hexstat-num" style="color: var(--lime)">40%</span
-                  ><span class="hexstat-lbl">Work Saved</span>
+                <div class="metric">
+                  <span class="metric-num" style="color: var(--lime)">40%</span>
+                  <span class="metric-lbl">Work Saved</span>
                 </div>
               </div>
             </div>
@@ -360,118 +315,113 @@
         </div>
       </section>
 
-      <div class="pitch-divider"></div>
+      <div class="section-divider"></div>
 
-      <!-- CAREER TIMELINE -->
+      <!-- EXPERIENCE -->
       <section id="experience">
         <div class="sec-label">03 — Experience</div>
         <h2 class="sec-title">Work <em>History</em></h2>
         <p class="sec-sub">Key roles, outcomes, and impact delivered.</p>
         <div class="timeline">
-          <div class="match">
-            <div class="match-dot active"></div>
-            <div class="match-season">
-              <span class="match-year">2026</span>
-              <span class="match-dur">Present</span>
+          <div class="tl-item">
+            <div class="tl-dot active"></div>
+            <div class="tl-date">
+              <span class="tl-year">2026</span>
+              <span class="tl-dur">Present</span>
             </div>
-            <div class="match-content">
+            <div class="tl-body">
               <span class="status-pill pill-active"
-                ><div
-                  class="pulse-dot"
-                  style="width: 5px; height: 5px; margin-right: 2px"
-                ></div>
-                On Pitch</span
+                ><div class="pulse-dot" style="width: 5px; height: 5px; margin-right: 2px"></div>
+                Active</span
               >
-              <div class="match-club">
-                <div class="club-badge">P990</div>
-                <div class="match-title">Data Engineer</div>
+              <div class="tl-header">
+                <div class="org-badge">P990</div>
+                <div class="tl-title">Data Engineer</div>
               </div>
-              <div class="match-org">Project 990 · Bloomington, IN</div>
-              <p class="match-desc">
+              <div class="tl-org">Project 990 · Bloomington, IN</div>
+              <p class="tl-desc">
                 Refined and deployed transformer-based NLP pipelines on HPC
                 infrastructure to semantically classify 120K+ nonprofit
                 financial records — enabling data-driven feature extraction and
                 downstream ML analytics at scale.
               </p>
-              <div class="match-stats">
-                <div class="mstat">
-                  <span class="mstat-num">120K+</span
-                  ><span class="mstat-lbl">Records Classified</span>
+              <div class="tl-metrics">
+                <div class="tl-metric">
+                  <span class="tm-num">120K+</span
+                  ><span class="tm-lbl">Records Classified</span>
                 </div>
-                <div class="mstat">
-                  <span class="mstat-num">NLP</span
-                  ><span class="mstat-lbl">Transformers</span>
+                <div class="tl-metric">
+                  <span class="tm-num">NLP</span
+                  ><span class="tm-lbl">Transformers</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="match">
-            <div class="match-dot"></div>
-            <div class="match-season">
-              <span class="match-year">2025</span>
-              <span class="match-dur">3 months</span>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-date">
+              <span class="tl-year">2025</span>
+              <span class="tl-dur">3 months</span>
             </div>
-            <div class="match-content">
+            <div class="tl-body">
               <span class="status-pill pill-done">Full Time</span>
-              <div class="match-club">
-                <div class="club-badge">IUB</div>
-                <div class="match-title">Research Assistant</div>
+              <div class="tl-header">
+                <div class="org-badge">IUB</div>
+                <div class="tl-title">Research Assistant</div>
               </div>
-              <div class="match-org">Indiana University Bloomington</div>
-              <p class="match-desc">
+              <div class="tl-org">Indiana University Bloomington</div>
+              <p class="tl-desc">
                 Processed 1.5GB+ of UK Healthcare data using Python, Pandas,
                 Dask, and DuckDB. Converted datasets to Parquet/Feather reducing
                 prep time by 30% and storage by 25–35%. Built cloud ingestion
                 pipelines cutting manual work by 40%. Delivered root cause
                 analysis on GP Practice workforce allocation.
               </p>
-              <div class="match-stats">
-                <div class="mstat">
-                  <span class="mstat-num">1.5GB+</span
-                  ><span class="mstat-lbl">Data Processed</span>
+              <div class="tl-metrics">
+                <div class="tl-metric">
+                  <span class="tm-num">1.5GB+</span
+                  ><span class="tm-lbl">Data Processed</span>
                 </div>
-                <div class="mstat">
-                  <span class="mstat-num">-30%</span
-                  ><span class="mstat-lbl">Prep Time</span>
+                <div class="tl-metric">
+                  <span class="tm-num">-30%</span
+                  ><span class="tm-lbl">Prep Time</span>
                 </div>
-                <div class="mstat">
-                  <span class="mstat-num">-40%</span
-                  ><span class="mstat-lbl">Manual Work</span>
+                <div class="tl-metric">
+                  <span class="tm-num">-40%</span
+                  ><span class="tm-lbl">Manual Work</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="match">
-            <div class="match-dot"></div>
-            <div class="match-season">
-              <span class="match-year">2022</span>
-              <span class="match-dur">8 months</span>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-date">
+              <span class="tl-year">2022</span>
+              <span class="tl-dur">8 months</span>
             </div>
-            <div class="match-content">
+            <div class="tl-body">
               <span class="status-pill pill-done">Full Time</span>
-              <div class="match-club">
-                <div class="club-badge">CGZ</div>
-                <div class="match-title">Software Engineer</div>
+              <div class="tl-header">
+                <div class="org-badge">CGZ</div>
+                <div class="tl-title">Software Engineer</div>
               </div>
-              <div class="match-org">
-                Cognizant Technology Solutions · Bengaluru
-              </div>
-              <p class="match-desc">
+              <div class="tl-org">Cognizant Technology Solutions · Bengaluru</div>
+              <p class="tl-desc">
                 Engineered Python/SQL ETL workflows improving data quality by
                 40% and prep time by 30%. Built interactive Power BI dashboards
                 and automated reporting pipelines enabling self-serve KPI access
                 across business units.
               </p>
-              <div class="match-stats">
-                <div class="mstat">
-                  <span class="mstat-num">+40%</span
-                  ><span class="mstat-lbl">Data Quality</span>
+              <div class="tl-metrics">
+                <div class="tl-metric">
+                  <span class="tm-num">+40%</span
+                  ><span class="tm-lbl">Data Quality</span>
                 </div>
-                <div class="mstat">
-                  <span class="mstat-num">-30%</span
-                  ><span class="mstat-lbl">Prep Time</span>
+                <div class="tl-metric">
+                  <span class="tm-num">-30%</span
+                  ><span class="tm-lbl">Prep Time</span>
                 </div>
               </div>
             </div>
@@ -479,126 +429,109 @@
         </div>
       </section>
 
-      <div class="pitch-divider"></div>
+      <div class="section-divider"></div>
 
-      <!-- TROPHY CABINET -->
+      <!-- PROJECTS -->
       <section id="projects">
         <div class="sec-label">04 — Projects</div>
         <h2 class="sec-title">Key <em>Projects</em></h2>
-        <p class="sec-sub">
-          Projects delivered, problems solved, impact measured.
-        </p>
-        <div class="trophies-grid">
-          <div class="trophy">
-            <div
-              class="trophy-banner"
-              style="background: linear-gradient(135deg, #e8f5ee, #d0ecd8)"
-            >
-              <div class="trophy-icon" style="color: var(--green)">BUS</div>
-              <div class="trophy-ribbon tr-green"></div>
-              <span class="trophy-season">Spring 2025</span>
+        <p class="sec-sub">Projects delivered, problems solved, impact measured.</p>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="card-banner" style="background: linear-gradient(135deg, rgba(56,189,248,0.14), rgba(167,139,250,0.12))">
+              <div class="card-icon" style="color: var(--green)">BUS</div>
+              <div class="card-ribbon cr-green"></div>
+              <span class="card-date">Spring 2025</span>
             </div>
-            <div class="trophy-body">
-              <div class="trophy-name">IndyGO Ridership Analytics</div>
-              <p class="trophy-desc">
+            <div class="card-body">
+              <div class="card-title">IndyGO Ridership Analytics</div>
+              <p class="card-desc">
                 Analyzed 1M+ ridership records uncovering spatial, temporal, and
                 KPI trends. Built geospatial Power BI dashboard driving
                 strategic route optimization for transit teams.
               </p>
-              <div class="trophy-tech">
+              <div class="card-tech">
                 <span class="tech-tag">Python</span
                 ><span class="tech-tag">Pandas</span
                 ><span class="tech-tag">Power BI</span
                 ><span class="tech-tag">SQL</span
                 ><span class="tech-tag">NumPy</span>
               </div>
-              <a href="#" class="trophy-link">View on GitHub →</a>
+              <a href="#" class="card-link">View on GitHub →</a>
             </div>
           </div>
 
-          <div class="trophy">
-            <div
-              class="trophy-banner"
-              style="background: linear-gradient(135deg, #f3eeff, #e8ddf5)"
-            >
-              <div class="trophy-icon" style="color: #bf5fff">MIND</div>
-              <div class="trophy-ribbon tr-gold"></div>
-              <span class="trophy-season">Spring 2025</span>
+          <div class="project-card">
+            <div class="card-banner" style="background: linear-gradient(135deg, rgba(167,139,250,0.18), rgba(56,189,248,0.1))">
+              <div class="card-icon" style="color: var(--gold)">MIND</div>
+              <div class="card-ribbon cr-gold"></div>
+              <span class="card-date">Spring 2025</span>
             </div>
-            <div class="trophy-body">
-              <div class="trophy-name">MindStat: Mental Health Platform</div>
-              <p class="trophy-desc">
+            <div class="card-body">
+              <div class="card-title">MindStat: Mental Health Platform</div>
+              <p class="card-desc">
                 Full-stack mental health platform with Flask APIs, MongoDB, and
                 React for secure data collection, real-time survey analytics,
                 and interactive visualizations.
               </p>
-              <div class="trophy-tech">
+              <div class="card-tech">
                 <span class="tech-tag">Python</span
                 ><span class="tech-tag">Flask</span
                 ><span class="tech-tag">MongoDB</span
                 ><span class="tech-tag">React</span>
               </div>
-              <a href="#" class="trophy-link">View on GitHub →</a>
+              <a href="#" class="card-link">View on GitHub →</a>
             </div>
           </div>
 
-          <div class="trophy">
-            <div
-              class="trophy-banner"
-              style="background: linear-gradient(135deg, #fdf8e8, #f5ecc8)"
-            >
-              <div class="trophy-icon" style="color: var(--gold)">YOLO</div>
-              <div class="trophy-ribbon tr-lime"></div>
-              <span class="trophy-season">Spring 2025</span>
+          <div class="project-card">
+            <div class="card-banner" style="background: linear-gradient(135deg, rgba(56,189,248,0.1), rgba(96,165,250,0.14))">
+              <div class="card-icon" style="color: var(--lime)">YOLO</div>
+              <div class="card-ribbon cr-lime"></div>
+              <span class="card-date">Spring 2025</span>
             </div>
-            <div class="trophy-body">
-              <div class="trophy-name">Intelligent Traffic Signal AI</div>
-              <p class="trophy-desc">
+            <div class="card-body">
+              <div class="card-title">Intelligent Traffic Signal AI</div>
+              <p class="card-desc">
                 Fine-tuned YOLOv8x on a custom campus dataset. Simulated
                 adaptive signal control across 4 lanes — reducing wait times by
                 20% in 2 signal cycles.
               </p>
-              <div class="trophy-tech">
+              <div class="card-tech">
                 <span class="tech-tag">Python</span
                 ><span class="tech-tag">YOLOv8</span
                 ><span class="tech-tag">OpenCV</span>
               </div>
-              <a href="#" class="trophy-link">View on GitHub →</a>
+              <a href="#" class="card-link">View on GitHub →</a>
             </div>
           </div>
         </div>
       </section>
 
-      <div class="pitch-divider"></div>
+      <div class="section-divider"></div>
 
-      <!-- ACADEMY -->
+      <!-- EDUCATION -->
       <section id="education">
         <div class="sec-label">05 — Education</div>
         <h2 class="sec-title">Academic <em>Background</em></h2>
         <p class="sec-sub">Where the foundation was built.</p>
-        <div class="academy-grid">
-          <div class="academy-card ac-green">
-            <div class="academy-num">MS</div>
-            <div class="academy-degree">M.S. in Data Science</div>
-            <div class="academy-school">Indiana University Bloomington</div>
-            <div class="academy-period">
-              Luddy School of Informatics · Expected May 2026
-            </div>
-            <div class="academy-tags">
+        <div class="edu-grid">
+          <div class="edu-card ec-green">
+            <div class="edu-num">MS</div>
+            <div class="edu-degree">M.S. in Data Science</div>
+            <div class="edu-school">Indiana University Bloomington</div>
+            <div class="edu-period">Luddy School of Informatics · Expected May 2026</div>
+            <div class="edu-tags">
               <span class="atag atag-green">GPA 3.77 / 4.00</span>
               <span class="atag atag-green">Bloomington, IN</span>
             </div>
           </div>
-          <div class="academy-card ac-gold">
-            <div class="academy-num">BE</div>
-            <div class="academy-degree">
-              B.E. in Telecommunication Engineering
-            </div>
-            <div class="academy-school">
-              Sir M Visvesvaraya Institute of Technology
-            </div>
-            <div class="academy-period">VTU · Graduated July 2022</div>
-            <div class="academy-tags">
+          <div class="edu-card ec-gold">
+            <div class="edu-num">BE</div>
+            <div class="edu-degree">B.E. in Telecommunication Engineering</div>
+            <div class="edu-school">Sir M Visvesvaraya Institute of Technology</div>
+            <div class="edu-period">VTU · Graduated July 2022</div>
+            <div class="edu-tags">
               <span class="atag atag-gold">GPA 8.75 / 10.0</span>
               <span class="atag atag-gold">Bengaluru, India</span>
             </div>
@@ -606,7 +539,7 @@
         </div>
       </section>
 
-      <div class="pitch-divider"></div>
+      <div class="section-divider"></div>
 
       <!-- CONTACT -->
       <section id="contact">
@@ -633,11 +566,7 @@
               </div>
               <span class="ch-arrow">→</span>
             </a>
-            <a
-              href="https://www.linkedin.com/in/shashank0804"
-              target="_blank"
-              class="channel"
-            >
+            <a href="https://www.linkedin.com/in/shashank0804" target="_blank" class="channel">
               <div class="ch-icon">LI</div>
               <div>
                 <div class="ch-lbl">LinkedIn</div>
@@ -645,11 +574,7 @@
               </div>
               <span class="ch-arrow">→</span>
             </a>
-            <a
-              href="https://github.com/Shash010"
-              target="_blank"
-              class="channel"
-            >
+            <a href="https://github.com/Shash010" target="_blank" class="channel">
               <div class="ch-icon">GH</div>
               <div>
                 <div class="ch-lbl">GitHub</div>
@@ -661,33 +586,17 @@
           <div class="contact-form">
             <div>
               <label class="form-label">Your Name</label
-              ><input
-                type="text"
-                class="form-input"
-                placeholder="Jane Recruiter"
-              />
+              ><input type="text" class="form-input" placeholder="Jane Recruiter" />
             </div>
             <div>
               <label class="form-label">Your Email</label
-              ><input
-                type="email"
-                class="form-input"
-                placeholder="jane@company.com"
-              />
+              ><input type="email" class="form-input" placeholder="jane@company.com" />
             </div>
             <div>
               <label class="form-label">Message</label
-              ><textarea
-                class="form-textarea"
-                placeholder="Tell me about the opportunity..."
-              ></textarea>
+              ><textarea class="form-textarea" placeholder="Tell me about the opportunity..."></textarea>
             </div>
-            <a
-              href="#"
-              class="btn-primary"
-              style="text-align: center; display: block"
-              >Send Message</a
-            >
+            <a href="#" class="btn-primary" style="text-align: center; display: block">Send Message</a>
           </div>
         </div>
       </section>
