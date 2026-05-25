@@ -772,6 +772,14 @@ ul.tl-desc li {
   margin-bottom: 18px;
 }
 
+ul.pc-desc {
+  padding-left: 18px;
+}
+
+ul.pc-desc li {
+  margin-bottom: 10px;
+}
+
 .pc-tech { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 18px; }
 
 .tech-tag {
