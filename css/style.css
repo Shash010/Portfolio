@@ -670,6 +670,14 @@ section {
   max-width: 680px;
 }
 
+ul.tl-desc {
+  padding-left: 18px;
+}
+
+ul.tl-desc li {
+  margin-bottom: 10px;
+}
+
 .tl-metrics { display: flex; flex-wrap: wrap; gap: 20px; }
 .tl-metric { display: flex; flex-direction: column; }
 
