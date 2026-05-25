@@ -1,6 +1,6 @@
 // Animate skill bars when they scroll into view
 document.addEventListener('DOMContentLoaded', () => {
-  const fills = document.querySelectorAll('.sk-fill, .tbs-fill');
+  const fills = document.querySelectorAll('.sk-fill, .ids-fill');
 
   fills.forEach(el => {
     el.style.animationPlayState = 'paused';

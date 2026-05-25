@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shashank Mekkiramane Lingaraju — Data Engineer</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
@@ -13,16 +13,17 @@
   <body>
     <!-- NAV -->
     <nav>
-      <div class="nav-prompt">
-        <span class="np-user">sml</span><span class="np-at">@</span><span class="np-host">portfolio</span><span class="np-colon">:</span><span class="np-path">~</span><span class="np-dollar"> $</span>
+      <div class="nav-badge">
+        <div class="nav-crest">SML</div>
+        <div class="nav-name">Shashank M. L.</div>
       </div>
       <ul class="nav-links">
-        <li><a href="#about"><span class="nb">[</span>about<span class="nb">]</span></a></li>
-        <li><a href="#skills"><span class="nb">[</span>skills<span class="nb">]</span></a></li>
-        <li><a href="#experience"><span class="nb">[</span>exp<span class="nb">]</span></a></li>
-        <li><a href="#projects"><span class="nb">[</span>projects<span class="nb">]</span></a></li>
-        <li><a href="#education"><span class="nb">[</span>edu<span class="nb">]</span></a></li>
-        <li><a href="#contact"><span class="nb">[</span>contact<span class="nb">]</span></a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
@@ -31,164 +32,151 @@
       <div id="hero">
         <div class="hero-inner">
           <div class="hero-left">
-            <div class="hero-block">
-              <div class="hb-line"><span class="prompt">$</span><span class="cmd"> whoami</span></div>
-              <div class="hb-out">
-                <div class="hero-firstname">Shashank Mekkiramane</div>
-                <div class="hero-lastname">LINGARAJU<span class="cursor">_</span></div>
-              </div>
-
-              <div class="hb-line"><span class="prompt">$</span><span class="cmd"> cat role.txt</span></div>
-              <div class="hb-out hero-position">Data Engineering · Analytics · AI</div>
-
-              <div class="hb-line"><span class="prompt">$</span><span class="cmd"> cat bio.txt</span></div>
-              <div class="hb-out hero-bio">
-                Results-driven Data Engineer with 1+ year of experience building
-                NLP pipelines, BI dashboards, and scalable data infrastructure. MS
-                Data Science @ Indiana University. GPA 3.77.
-              </div>
-
-              <div class="hb-line"><span class="prompt">$</span><span class="cmd"> ls ./actions/</span></div>
-              <div class="hb-out hero-ctas">
-                <a href="#projects" class="btn-primary">./explore-work.sh</a>
-                <a href="#contact" class="btn-secondary">./hire-me.sh</a>
-              </div>
+            <div class="hero-name-wrap">
+              <span class="hero-firstname">Shashank Mekkiramane</span>
+              <span class="hero-lastname">LINGARAJU</span>
+            </div>
+            <div class="hero-role-badge">Data Engineering · Analytics · AI</div>
+            <p class="hero-bio">
+              Results-driven Data Engineer with 1+ year of experience building
+              NLP pipelines, BI dashboards, and scalable data infrastructure. MS
+              Data Science @ Indiana University. GPA 3.77.
+            </p>
+            <div class="hero-ctas">
+              <a href="#projects" class="btn-primary">Explore Work →</a>
+              <a href="#contact" class="btn-secondary">Hire Me</a>
             </div>
           </div>
 
-          <!-- TERMINAL CARD -->
-          <div class="term-card">
-            <div class="term-titlebar">
-              <div class="ttb-dots">
-                <span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span>
-              </div>
-              <div class="ttb-title">sml@data-portfolio: ~</div>
+          <!-- ID CARD -->
+          <div class="id-card">
+            <div class="idc-header">
+              <span class="idc-title">PROFILE</span>
+              <span class="idc-id">DATA-ENG-01</span>
             </div>
-            <div class="term-body">
-              <div class="tb-cmd"><span class="prompt">$</span> cat profile.txt</div>
-              <div class="tb-block">
-                <div class="tbr"><span class="tbr-key">NAME  </span><span class="tbr-sep">:</span> Shashank M.L.</div>
-                <div class="tbr"><span class="tbr-key">ROLE  </span><span class="tbr-sep">:</span> Data Engineer</div>
-                <div class="tbr"><span class="tbr-key">DEGREE</span><span class="tbr-sep">:</span> MS Data Science · IU 2026</div>
-                <div class="tbr"><span class="tbr-key">STATUS</span><span class="tbr-sep">:</span> <span class="status-on">● AVAILABLE</span></div>
-              </div>
-
-              <div class="tb-cmd"><span class="prompt">$</span> ./skills --list</div>
-              <div class="tb-skills">
-                <div class="tbs-row">
-                  <span class="tbs-name">Python   </span>
-                  <div class="tbs-bar"><div class="tbs-fill" style="width:92%"></div></div>
-                  <span class="tbs-tag tag-bright">EXPERT</span>
+            <div class="idc-body">
+              <div class="idc-avatar">SML</div>
+              <div class="idc-name">Shashank M.L.</div>
+              <div class="idc-role">Data Engineer · MS 2026</div>
+              <div class="idc-rule"></div>
+              <div class="idc-skills">
+                <div class="ids-row">
+                  <span class="ids-name">Python</span>
+                  <div class="ids-bar"><div class="ids-fill" style="width:92%"></div></div>
+                  <span class="ids-level lv-yellow">EXPERT</span>
                 </div>
-                <div class="tbs-row">
-                  <span class="tbs-name">SQL      </span>
-                  <div class="tbs-bar"><div class="tbs-fill" style="width:88%"></div></div>
-                  <span class="tbs-tag tag-bright">EXPERT</span>
+                <div class="ids-row">
+                  <span class="ids-name">SQL</span>
+                  <div class="ids-bar"><div class="ids-fill" style="width:88%"></div></div>
+                  <span class="ids-level lv-yellow">EXPERT</span>
                 </div>
-                <div class="tbs-row">
-                  <span class="tbs-name">Power BI </span>
-                  <div class="tbs-bar"><div class="tbs-fill tbs-adv" style="width:85%"></div></div>
-                  <span class="tbs-tag tag-amber">ADV</span>
+                <div class="ids-row">
+                  <span class="ids-name">Power BI</span>
+                  <div class="ids-bar"><div class="ids-fill ids-pink" style="width:85%"></div></div>
+                  <span class="ids-level lv-pink">ADV</span>
                 </div>
-                <div class="tbs-row">
-                  <span class="tbs-name">ETL/Pipes</span>
-                  <div class="tbs-bar"><div class="tbs-fill tbs-adv" style="width:84%"></div></div>
-                  <span class="tbs-tag tag-amber">ADV</span>
+                <div class="ids-row">
+                  <span class="ids-name">ETL/Pipes</span>
+                  <div class="ids-bar"><div class="ids-fill ids-pink" style="width:84%"></div></div>
+                  <span class="ids-level lv-pink">ADV</span>
                 </div>
-                <div class="tbs-row">
-                  <span class="tbs-name">ML / NLP </span>
-                  <div class="tbs-bar"><div class="tbs-fill tbs-prof" style="width:80%"></div></div>
-                  <span class="tbs-tag tag-dim">PROF</span>
+                <div class="ids-row">
+                  <span class="ids-name">ML / NLP</span>
+                  <div class="ids-bar"><div class="ids-fill ids-cyan" style="width:80%"></div></div>
+                  <span class="ids-level lv-cyan">PROF</span>
                 </div>
-                <div class="tbs-row">
-                  <span class="tbs-name">Cloud GCP</span>
-                  <div class="tbs-bar"><div class="tbs-fill tbs-prof" style="width:78%"></div></div>
-                  <span class="tbs-tag tag-dim">PROF</span>
+                <div class="ids-row">
+                  <span class="ids-name">Cloud GCP</span>
+                  <div class="ids-bar"><div class="ids-fill ids-cyan" style="width:78%"></div></div>
+                  <span class="ids-level lv-cyan">PROF</span>
                 </div>
               </div>
-              <div class="tb-prompt-end"><span class="prompt">$</span> <span class="cursor">_</span></div>
+              <div class="idc-rule"></div>
+              <div class="idc-foot">
+                <div class="idc-avail"><span class="avail-dot"></span> AVAILABLE</div>
+                <div class="idc-inst">IU · 2026</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="section-divider"></div>
-
       <!-- ABOUT -->
       <section id="about">
-        <div class="sec-header">
-          <span class="sec-cmd">$ cat --section=01-about</span>
-          <span class="sec-hr"></span>
-        </div>
-        <h2 class="sec-title">About <span class="title-cmt">// me</span></h2>
+        <div class="sec-eyebrow">01 — About</div>
+        <h2 class="sec-title">About <em>Me</em></h2>
         <div class="about-grid">
-          <div class="about-card">
-            <div class="card-label">// summary.txt</div>
+          <div class="about-card card-white">
+            <div class="card-tag">Summary</div>
             <p>
               I'm a Data Engineer and Analyst completing my Master's in Data
               Science at Indiana University Bloomington (GPA 3.77). I specialize
               in scalable ETL pipelines, NLP systems, and BI dashboards that
               turn messy raw data into decisions that matter.
             </p>
-            <p style="margin-top:14px">
+            <p>
               From processing 1.5GB+ healthcare datasets to deploying
               transformer models on HPC clusters — I work across the full data
               stack, from ingestion to visualization to insights.
             </p>
           </div>
-          <div class="about-card">
-            <div class="card-label">// details.env</div>
-            <div class="env-block">
-              <div class="env-row">
-                <span class="env-key">LOCATION</span><span class="env-eq">=</span><span class="env-val">"Bloomington, IN · Open to Remote"</span>
+          <div class="about-card card-yellow">
+            <div class="card-tag">Details</div>
+            <div class="detail-rows">
+              <div class="detail-row">
+                <div class="dr-label">Location</div>
+                <div class="dr-val">Bloomington, IN · Open to Remote</div>
               </div>
-              <div class="env-row">
-                <span class="env-key">SPEC    </span><span class="env-eq">=</span><span class="env-val">"Data Engineering · BI · NLP · ML"</span>
+              <div class="detail-row">
+                <div class="dr-label">Specialization</div>
+                <div class="dr-val">Data Engineering · BI · NLP · ML</div>
               </div>
-              <div class="env-row">
-                <span class="env-key">SKILLS  </span><span class="env-eq">=</span><span class="env-val">[Python, SQL, Power BI, Spark, GCP]</span>
+              <div class="detail-row">
+                <div class="dr-label">Key Skills</div>
+                <div class="skill-chips">
+                  <span class="chip">Python</span>
+                  <span class="chip">SQL</span>
+                  <span class="chip">Power BI</span>
+                  <span class="chip">Spark</span>
+                  <span class="chip">GCP</span>
+                </div>
               </div>
-              <div class="env-row" style="margin-top:8px">
-                <span class="env-key">STATUS  </span><span class="env-eq">=</span><span class="env-val status-on">"● OPEN TO OPPORTUNITIES"</span>
+              <div class="detail-row">
+                <div class="avail-badge"><span class="avail-dot"></span> Open to Opportunities</div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <div class="section-divider"></div>
-
       <!-- SKILLS -->
       <section id="skills">
-        <div class="sec-header">
-          <span class="sec-cmd">$ ./skills.sh --verbose</span>
-          <span class="sec-hr"></span>
-        </div>
-        <h2 class="sec-title">Core <span class="title-cmt">// skills</span></h2>
+        <div class="sec-eyebrow">02 — Skills</div>
+        <h2 class="sec-title">Core <em>Skills</em></h2>
         <div class="stats-layout">
           <div class="stat-category">
-            <div class="stat-cat-label">// Analytics &amp; Visualization</div>
+            <div class="stat-cat-label">Analytics &amp; Visualization</div>
             <div class="skill-row">
               <span class="sk-name">Python</span>
-              <div class="sk-track"><div class="sk-fill sf-green" style="width:92%"></div></div>
+              <div class="sk-track"><div class="sk-fill sf-yellow" style="width:92%"></div></div>
               <span class="sk-pct">92</span>
             </div>
             <div class="sk-sub">Pandas · Dask · NumPy · Scikit-learn</div>
             <div class="skill-row">
               <span class="sk-name">SQL / PostgreSQL</span>
-              <div class="sk-track"><div class="sk-fill sf-amber" style="width:88%"></div></div>
+              <div class="sk-track"><div class="sk-fill sf-yellow" style="width:88%"></div></div>
               <span class="sk-pct">88</span>
             </div>
             <div class="sk-sub">Query optimisation · DuckDB · NoSQL</div>
             <div class="skill-row">
               <span class="sk-name">Power BI / Tableau</span>
-              <div class="sk-track"><div class="sk-fill sf-lime" style="width:85%"></div></div>
+              <div class="sk-track"><div class="sk-fill sf-pink" style="width:85%"></div></div>
               <span class="sk-pct">85</span>
             </div>
             <div class="sk-sub">DAX · Geospatial · Time-series</div>
             <div class="skill-row">
               <span class="sk-name">Excel &amp; Reporting</span>
-              <div class="sk-track"><div class="sk-fill sf-green" style="width:90%"></div></div>
+              <div class="sk-track"><div class="sk-fill sf-yellow" style="width:90%"></div></div>
               <span class="sk-pct">90</span>
             </div>
             <div class="sk-sub">Pivot tables · KPI dev · Root cause</div>
@@ -196,67 +184,68 @@
 
           <div>
             <div class="stat-category">
-              <div class="stat-cat-label">// Engineering &amp; Cloud</div>
+              <div class="stat-cat-label">Engineering &amp; Cloud</div>
               <div class="skill-row">
                 <span class="sk-name">Data Engineering</span>
-                <div class="sk-track"><div class="sk-fill sf-amber" style="width:84%"></div></div>
+                <div class="sk-track"><div class="sk-fill sf-cyan" style="width:84%"></div></div>
                 <span class="sk-pct">84</span>
               </div>
               <div class="sk-sub">ETL pipelines · Parquet · Feather</div>
               <div class="skill-row">
                 <span class="sk-name">Cloud &amp; Big Data</span>
-                <div class="sk-track"><div class="sk-fill sf-lime" style="width:78%"></div></div>
+                <div class="sk-track"><div class="sk-fill sf-cyan" style="width:78%"></div></div>
                 <span class="sk-pct">78</span>
               </div>
               <div class="sk-sub">GCP · Snowflake · Spark</div>
               <div class="skill-row">
                 <span class="sk-name">ML &amp; NLP</span>
-                <div class="sk-track"><div class="sk-fill sf-green" style="width:80%"></div></div>
+                <div class="sk-track"><div class="sk-fill sf-pink" style="width:80%"></div></div>
                 <span class="sk-pct">80</span>
               </div>
               <div class="sk-sub">Transformers · YOLOv8 · Regression</div>
               <div class="skill-row">
                 <span class="sk-name">Data Visualisation</span>
-                <div class="sk-track"><div class="sk-fill sf-dim" style="width:87%"></div></div>
+                <div class="sk-track"><div class="sk-fill sf-yellow" style="width:87%"></div></div>
                 <span class="sk-pct">87</span>
               </div>
               <div class="sk-sub">Matplotlib · Seaborn · Dashboards</div>
             </div>
 
-            <div class="metrics-card" style="margin-top:20px">
-              <div class="mc-label">// key-metrics.json</div>
-              <div class="mc-json">
-                <span class="mc-brace">{</span><br>
-                &nbsp;&nbsp;<span class="mc-key">"data_processed"</span><span class="mc-colon">:</span> <span class="mc-str">"<span class="mc-green">1.5GB+</span>"</span>,<br>
-                &nbsp;&nbsp;<span class="mc-key">"records_tagged"</span><span class="mc-colon">:</span> <span class="mc-str">"<span class="mc-amber">120K+</span>"</span>,<br>
-                &nbsp;&nbsp;<span class="mc-key">"work_saved"</span><span class="mc-colon">:</span> <span class="mc-str">"<span class="mc-lime">40%</span>"</span><br>
-                <span class="mc-brace">}</span>
+            <div class="impact-card">
+              <div class="ic-label">KEY IMPACT</div>
+              <div class="ic-grid">
+                <div class="ic-item">
+                  <div class="ic-num">1.5GB+</div>
+                  <div class="ic-lbl">Data Processed</div>
+                </div>
+                <div class="ic-item">
+                  <div class="ic-num ic-pink">120K+</div>
+                  <div class="ic-lbl">Records Tagged</div>
+                </div>
+                <div class="ic-item">
+                  <div class="ic-num ic-cyan">40%</div>
+                  <div class="ic-lbl">Work Saved</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <div class="section-divider"></div>
-
       <!-- EXPERIENCE -->
       <section id="experience">
-        <div class="sec-header">
-          <span class="sec-cmd">$ git log --experience --oneline</span>
-          <span class="sec-hr"></span>
-        </div>
-        <h2 class="sec-title">Work <span class="title-cmt">// history</span></h2>
+        <div class="sec-eyebrow">03 — Experience</div>
+        <h2 class="sec-title">Work <em>History</em></h2>
         <div class="timeline">
           <div class="tl-item">
-            <div class="tl-gutter">
-              <div class="tl-dot active"></div>
-              <div class="tl-line"></div>
+            <div class="tl-numcol">
+              <div class="tl-num">01</div>
+              <div class="tl-vline"></div>
             </div>
             <div class="tl-body">
-              <div class="tl-meta">
-                <span class="tl-hash">a3f9b2e</span>
+              <div class="tl-top">
                 <span class="tl-year">2026</span>
-                <span class="pill-active">[ACTIVE]</span>
+                <span class="pill-active">● ACTIVE</span>
               </div>
               <div class="tl-title">Data Engineer</div>
               <div class="tl-org">Project 990 · Bloomington, IN</div>
@@ -267,22 +256,27 @@
                 downstream ML analytics at scale.
               </p>
               <div class="tl-metrics">
-                <div class="tl-metric"><span class="tm-num">120K+</span><span class="tm-lbl">Records Classified</span></div>
-                <div class="tl-metric"><span class="tm-num">NLP</span><span class="tm-lbl">Transformers</span></div>
+                <div class="tl-metric">
+                  <span class="tm-num">120K+</span>
+                  <span class="tm-lbl">Records Classified</span>
+                </div>
+                <div class="tl-metric">
+                  <span class="tm-num">NLP</span>
+                  <span class="tm-lbl">Transformers</span>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="tl-item">
-            <div class="tl-gutter">
-              <div class="tl-dot"></div>
-              <div class="tl-line"></div>
+            <div class="tl-numcol">
+              <div class="tl-num">02</div>
+              <div class="tl-vline"></div>
             </div>
             <div class="tl-body">
-              <div class="tl-meta">
-                <span class="tl-hash">7d2c8a1</span>
+              <div class="tl-top">
                 <span class="tl-year">2025</span>
-                <span class="pill-done">[MERGED]</span>
+                <span class="pill-done">Full Time · 3 mo</span>
               </div>
               <div class="tl-title">Research Assistant</div>
               <div class="tl-org">Indiana University Bloomington</div>
@@ -290,26 +284,33 @@
                 Processed 1.5GB+ of UK Healthcare data using Python, Pandas,
                 Dask, and DuckDB. Converted datasets to Parquet/Feather reducing
                 prep time by 30% and storage by 25–35%. Built cloud ingestion
-                pipelines cutting manual work by 40%. Delivered root cause
-                analysis on GP Practice workforce allocation.
+                pipelines cutting manual work by 40%.
               </p>
               <div class="tl-metrics">
-                <div class="tl-metric"><span class="tm-num">1.5GB+</span><span class="tm-lbl">Data Processed</span></div>
-                <div class="tl-metric"><span class="tm-num">-30%</span><span class="tm-lbl">Prep Time</span></div>
-                <div class="tl-metric"><span class="tm-num">-40%</span><span class="tm-lbl">Manual Work</span></div>
+                <div class="tl-metric">
+                  <span class="tm-num">1.5GB+</span>
+                  <span class="tm-lbl">Data Processed</span>
+                </div>
+                <div class="tl-metric">
+                  <span class="tm-num">-30%</span>
+                  <span class="tm-lbl">Prep Time</span>
+                </div>
+                <div class="tl-metric">
+                  <span class="tm-num">-40%</span>
+                  <span class="tm-lbl">Manual Work</span>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="tl-item">
-            <div class="tl-gutter">
-              <div class="tl-dot"></div>
+            <div class="tl-numcol">
+              <div class="tl-num">03</div>
             </div>
             <div class="tl-body">
-              <div class="tl-meta">
-                <span class="tl-hash">e1b4c9d</span>
+              <div class="tl-top">
                 <span class="tl-year">2022</span>
-                <span class="pill-done">[MERGED]</span>
+                <span class="pill-done">Full Time · 8 mo</span>
               </div>
               <div class="tl-title">Software Engineer</div>
               <div class="tl-org">Cognizant Technology Solutions · Bengaluru</div>
@@ -320,32 +321,32 @@
                 across business units.
               </p>
               <div class="tl-metrics">
-                <div class="tl-metric"><span class="tm-num">+40%</span><span class="tm-lbl">Data Quality</span></div>
-                <div class="tl-metric"><span class="tm-num">-30%</span><span class="tm-lbl">Prep Time</span></div>
+                <div class="tl-metric">
+                  <span class="tm-num">+40%</span>
+                  <span class="tm-lbl">Data Quality</span>
+                </div>
+                <div class="tl-metric">
+                  <span class="tm-num">-30%</span>
+                  <span class="tm-lbl">Prep Time</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <div class="section-divider"></div>
-
       <!-- PROJECTS -->
       <section id="projects">
-        <div class="sec-header">
-          <span class="sec-cmd">$ ls -la ~/projects/</span>
-          <span class="sec-hr"></span>
-        </div>
-        <h2 class="sec-title">Key <span class="title-cmt">// projects</span></h2>
+        <div class="sec-eyebrow">04 — Projects</div>
+        <h2 class="sec-title">Key <em>Projects</em></h2>
         <div class="projects-grid">
           <div class="project-card">
-            <div class="pc-header">
-              <div class="pc-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
-              <div class="pc-filename">indygo-analytics.py</div>
+            <div class="pc-banner banner-yellow">
+              <div class="pc-num">P—01</div>
               <span class="pc-date">Spring 2025</span>
             </div>
             <div class="pc-body">
-              <div class="pc-title"><span class="prompt">&gt;</span> IndyGO Ridership Analytics</div>
+              <div class="pc-title">IndyGO Ridership Analytics</div>
               <p class="pc-desc">
                 Analyzed 1M+ ridership records uncovering spatial, temporal, and
                 KPI trends. Built geospatial Power BI dashboard driving
@@ -354,18 +355,17 @@
               <div class="pc-tech">
                 <span class="tech-tag">Python</span><span class="tech-tag">Pandas</span><span class="tech-tag">Power BI</span><span class="tech-tag">SQL</span><span class="tech-tag">NumPy</span>
               </div>
-              <a href="#" class="pc-link">$ git clone ./indygo →</a>
+              <a href="#" class="pc-link">View on GitHub →</a>
             </div>
           </div>
 
           <div class="project-card">
-            <div class="pc-header">
-              <div class="pc-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
-              <div class="pc-filename">mindstat-platform.py</div>
+            <div class="pc-banner banner-pink">
+              <div class="pc-num">P—02</div>
               <span class="pc-date">Spring 2025</span>
             </div>
             <div class="pc-body">
-              <div class="pc-title"><span class="prompt">&gt;</span> MindStat: Mental Health Platform</div>
+              <div class="pc-title">MindStat: Mental Health Platform</div>
               <p class="pc-desc">
                 Full-stack mental health platform with Flask APIs, MongoDB, and
                 React for secure data collection, real-time survey analytics,
@@ -374,18 +374,17 @@
               <div class="pc-tech">
                 <span class="tech-tag">Python</span><span class="tech-tag">Flask</span><span class="tech-tag">MongoDB</span><span class="tech-tag">React</span>
               </div>
-              <a href="#" class="pc-link">$ git clone ./mindstat →</a>
+              <a href="#" class="pc-link">View on GitHub →</a>
             </div>
           </div>
 
           <div class="project-card">
-            <div class="pc-header">
-              <div class="pc-dots"><span class="dot-red"></span><span class="dot-amber"></span><span class="dot-green"></span></div>
-              <div class="pc-filename">traffic-signal-ai.py</div>
+            <div class="pc-banner banner-cyan">
+              <div class="pc-num">P—03</div>
               <span class="pc-date">Spring 2025</span>
             </div>
             <div class="pc-body">
-              <div class="pc-title"><span class="prompt">&gt;</span> Intelligent Traffic Signal AI</div>
+              <div class="pc-title">Intelligent Traffic Signal AI</div>
               <p class="pc-desc">
                 Fine-tuned YOLOv8x on a custom campus dataset. Simulated
                 adaptive signal control across 4 lanes — reducing wait times by
@@ -394,89 +393,77 @@
               <div class="pc-tech">
                 <span class="tech-tag">Python</span><span class="tech-tag">YOLOv8</span><span class="tech-tag">OpenCV</span>
               </div>
-              <a href="#" class="pc-link">$ git clone ./traffic-ai →</a>
+              <a href="#" class="pc-link">View on GitHub →</a>
             </div>
           </div>
         </div>
       </section>
 
-      <div class="section-divider"></div>
-
       <!-- EDUCATION -->
       <section id="education">
-        <div class="sec-header">
-          <span class="sec-cmd">$ cat ~/.education</span>
-          <span class="sec-hr"></span>
-        </div>
-        <h2 class="sec-title">Academic <span class="title-cmt">// background</span></h2>
+        <div class="sec-eyebrow">05 — Education</div>
+        <h2 class="sec-title">Academic <em>Background</em></h2>
         <div class="edu-grid">
-          <div class="edu-card ec-green">
+          <div class="edu-card ec-yellow">
             <div class="edu-num">MS</div>
             <div class="edu-degree">M.S. in Data Science</div>
             <div class="edu-school">Indiana University Bloomington</div>
             <div class="edu-period">Luddy School of Informatics · Expected May 2026</div>
             <div class="edu-tags">
-              <span class="tech-tag tag-bright">GPA 3.77 / 4.00</span>
-              <span class="tech-tag">Bloomington, IN</span>
+              <span class="chip chip-black">GPA 3.77 / 4.00</span>
+              <span class="chip chip-black">Bloomington, IN</span>
             </div>
           </div>
-          <div class="edu-card ec-amber">
-            <div class="edu-num edu-num-amber">BE</div>
-            <div class="edu-degree edu-degree-amber">B.E. in Telecommunication Engineering</div>
-            <div class="edu-school edu-school-amber">Sir M Visvesvaraya Institute of Technology</div>
+          <div class="edu-card ec-pink">
+            <div class="edu-num">BE</div>
+            <div class="edu-degree">B.E. in Telecommunication Engineering</div>
+            <div class="edu-school">Sir M Visvesvaraya Institute of Technology</div>
             <div class="edu-period">VTU · Graduated July 2022</div>
             <div class="edu-tags">
-              <span class="tech-tag tag-amber">GPA 8.75 / 10.0</span>
-              <span class="tech-tag">Bengaluru, India</span>
+              <span class="chip chip-black">GPA 8.75 / 10.0</span>
+              <span class="chip chip-black">Bengaluru, India</span>
             </div>
           </div>
         </div>
       </section>
 
-      <div class="section-divider"></div>
-
       <!-- CONTACT -->
       <section id="contact">
-        <div class="sec-header">
-          <span class="sec-cmd">$ ./contact.sh --init</span>
-          <span class="sec-hr"></span>
-        </div>
-        <h2 class="sec-title">Let's <span class="title-cmt">// connect</span></h2>
-        <p class="sec-sub">&gt; Open to full-time roles, research, and data projects. Get in touch.</p>
+        <div class="sec-eyebrow">06 — Contact</div>
+        <h2 class="sec-title">Let's <em>Connect</em></h2>
+        <p class="sec-sub">
+          Open to full-time roles, research, and data projects. Get in touch.
+        </p>
         <div class="contact-grid">
           <div class="contact-channels">
             <a href="mailto:shashank080401@gmail.com" class="channel">
-              <span class="ch-prompt">&gt;</span>
               <div class="ch-icon">@</div>
-              <div>
-                <div class="ch-lbl">// email</div>
+              <div class="ch-info">
+                <div class="ch-lbl">Email</div>
                 <div class="ch-val">shashank080401@gmail.com</div>
               </div>
               <span class="ch-arrow">→</span>
             </a>
             <a href="tel:8129744544" class="channel">
-              <span class="ch-prompt">&gt;</span>
-              <div class="ch-icon">TEL</div>
-              <div>
-                <div class="ch-lbl">// phone</div>
+              <div class="ch-icon">☎</div>
+              <div class="ch-info">
+                <div class="ch-lbl">Phone</div>
                 <div class="ch-val">812-974-4544</div>
               </div>
               <span class="ch-arrow">→</span>
             </a>
             <a href="https://www.linkedin.com/in/shashank0804" target="_blank" class="channel">
-              <span class="ch-prompt">&gt;</span>
-              <div class="ch-icon">LI</div>
-              <div>
-                <div class="ch-lbl">// linkedin</div>
+              <div class="ch-icon">in</div>
+              <div class="ch-info">
+                <div class="ch-lbl">LinkedIn</div>
                 <div class="ch-val">linkedin.com/in/shashank0804</div>
               </div>
               <span class="ch-arrow">→</span>
             </a>
             <a href="https://github.com/Shash010" target="_blank" class="channel">
-              <span class="ch-prompt">&gt;</span>
               <div class="ch-icon">GH</div>
-              <div>
-                <div class="ch-lbl">// github</div>
+              <div class="ch-info">
+                <div class="ch-lbl">GitHub</div>
                 <div class="ch-val">github.com/Shash010</div>
               </div>
               <span class="ch-arrow">→</span>
@@ -484,26 +471,26 @@
           </div>
           <div class="contact-form">
             <div>
-              <label class="form-label">&gt; your_name:</label>
+              <label class="form-label">Your Name</label>
               <input type="text" class="form-input" placeholder="Jane Recruiter" />
             </div>
             <div>
-              <label class="form-label">&gt; your_email:</label>
+              <label class="form-label">Your Email</label>
               <input type="email" class="form-input" placeholder="jane@company.com" />
             </div>
             <div>
-              <label class="form-label">&gt; message:</label>
+              <label class="form-label">Message</label>
               <textarea class="form-textarea" placeholder="Tell me about the opportunity..."></textarea>
             </div>
-            <a href="#" class="btn-primary" style="text-align:center;display:block">$ send-message.sh</a>
+            <button class="btn-primary" style="width:100%;cursor:pointer;border:none">Send Message →</button>
           </div>
         </div>
       </section>
     </main>
 
     <footer>
-      <div class="footer-prompt">sml@portfolio:~$<span class="cursor"> _</span></div>
-      <div class="footer-copy">// Shashank Mekkiramane Lingaraju · Data Engineer · IU 2026 · © 2025</div>
+      <div class="footer-name">Shashank Mekkiramane Lingaraju</div>
+      <div class="footer-copy">© 2025 · Data Engineer · Indiana University</div>
     </footer>
 
     <script src="js/main.js"></script>
