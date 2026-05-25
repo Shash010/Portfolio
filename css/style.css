@@ -333,7 +333,18 @@ section {
   text-align: center;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  margin-bottom: 18px;
+  margin-bottom: 6px;
+}
+
+.idc-location {
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 600;
+  color: rgba(0,0,0,0.4);
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
 }
 
 .idc-rule {
