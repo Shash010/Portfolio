@@ -731,6 +731,7 @@ ul.tl-desc li {
 .banner-black  { background: var(--black); }
 .banner-black .pc-num  { color: var(--yellow); }
 .banner-black .pc-date { color: rgba(255,255,255,0.7); border-color: rgba(255,255,255,0.4); background: transparent; }
+.banner-lime   { background: #C8FF00; }
 
 .pc-num {
   font-family: var(--font-display);
