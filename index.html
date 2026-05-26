@@ -504,37 +504,27 @@
               <span class="ch-arrow">→</span>
             </a>
           </div>
-          <div class="contact-form">
+          <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="PASTE_YOUR_KEY_HERE" />
+            <input type="hidden" name="subject" value="Portfolio Contact — New Message" />
+            <input type="checkbox" name="botcheck" style="display:none" />
             <div>
               <label class="form-label">Your Name</label>
-              <input
-                type="text"
-                class="form-input"
-                placeholder="Jane Recruiter"
-              />
+              <input type="text" name="name" class="form-input" placeholder="Jane Recruiter" required />
             </div>
             <div>
               <label class="form-label">Your Email</label>
-              <input
-                type="email"
-                class="form-input"
-                placeholder="jane@company.com"
-              />
+              <input type="email" name="email" class="form-input" placeholder="jane@company.com" required />
             </div>
             <div>
               <label class="form-label">Message</label>
-              <textarea
-                class="form-textarea"
-                placeholder="Tell me about the opportunity..."
-              ></textarea>
+              <textarea name="message" class="form-textarea" placeholder="Tell me about the opportunity..." required></textarea>
             </div>
-            <button
-              class="btn-primary"
-              style="width: 100%; cursor: pointer; border: none"
-            >
+            <button type="submit" class="btn-primary" id="submit-btn" style="width:100%;cursor:pointer;border:none">
               Send Message →
             </button>
-          </div>
+            <p id="form-status" style="display:none;margin-top:14px;font-weight:700;font-size:14px;"></p>
+          </form>
         </div>
       </section>
     </main>

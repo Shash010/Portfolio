@@ -1,19 +1,34 @@
-// Animate skill bars when they scroll into view
 document.addEventListener('DOMContentLoaded', () => {
-  const fills = document.querySelectorAll('.sk-fill, .ids-fill');
+  // Contact form submission
+  const form = document.getElementById('contact-form');
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = document.getElementById('submit-btn');
+      const status = document.getElementById('form-status');
 
-  fills.forEach(el => {
-    el.style.animationPlayState = 'paused';
-  });
+      btn.textContent = 'Sending…';
+      btn.disabled = true;
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.style.animationPlayState = 'running';
-        observer.unobserve(entry.target);
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { Accept: 'application/json' }
+      });
+
+      if (res.ok) {
+        status.textContent = 'Message sent — I\'ll get back to you soon.';
+        status.style.color = '#00a844';
+        status.style.display = 'block';
+        form.reset();
+        btn.textContent = 'Sent ✓';
+      } else {
+        status.textContent = 'Something went wrong. Try emailing me directly.';
+        status.style.color = '#FF2D55';
+        status.style.display = 'block';
+        btn.textContent = 'Send Message →';
+        btn.disabled = false;
       }
     });
-  }, { threshold: 0.15 });
-
-  fills.forEach(el => observer.observe(el));
+  }
 });
