@@ -298,6 +298,7 @@ section {
 
 .idc-photo-placeholder {
   width: 100%;
+  height: 260px;
   background: var(--bg);
   border: 2px dashed var(--black);
   margin-bottom: 18px;
@@ -306,7 +307,9 @@ section {
 
 .idc-photo-placeholder img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 12%;
   display: block;
 }
 
