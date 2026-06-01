@@ -55,9 +55,11 @@
               <span class="idc-id">DATA-ENG</span>
             </div>
             <div class="idc-body">
-              <div class="idc-photo-placeholder">
-                <span class="idc-photo-label">PHOTO</span>
+              <div class="idc-photo-placeholder" id="photo-placeholder" onclick="document.getElementById('photo-upload').click()" title="Click to upload photo">
+                <img id="photo-preview" src="" alt="" style="display:none;width:100%;height:100%;object-fit:cover;" />
+                <span class="idc-photo-label" id="photo-label">CLICK TO UPLOAD</span>
               </div>
+              <input type="file" id="photo-upload" accept="image/*" style="display:none" />
               <div class="idc-name">Shashank M.L.</div>
               <div class="idc-role">Data Engineer · MS 2026</div>
               <div class="idc-location">Bloomington, IN · Open to Relocate</div>
@@ -82,31 +84,37 @@
             <div class="card-tag">Summary</div>
             <p>I build systems that turn raw data into decisions.</p>
             <p>
-              I recently completed my MS in Data Science at Indiana University Bloomington
-              (May 2026, GPA 3.74), and have spent the last two years designing and shipping
-              data infrastructure, analytics pipelines, and ML systems with measurable business impact.
+              I recently completed my MS in Data Science at Indiana University
+              Bloomington (May 2026, GPA 3.74), and have spent the last two
+              years designing and shipping data infrastructure, analytics
+              pipelines, and ML systems with measurable business impact.
             </p>
             <p>
-              <strong>Data Engineering:</strong> Architected end-to-end ETL/ELT pipelines processing
-              120K+ nonprofit financial records using Python, Alteryx, and transformer-based NLP on HPC
-              infrastructure. Engineered cloud-based ingestion pipelines on 1.5 GB+ of healthcare data
-              using DuckDB, Dask, and PyArrow, cutting prep time by 30% and storage by 25–35%. Built a
-              modern ELT pipeline orchestrated via Dagster with SQLMesh transformations and
+              <strong>Data Engineering:</strong> Architected end-to-end ETL/ELT
+              pipelines processing 120K+ nonprofit financial records using
+              Python, Alteryx, and transformer-based NLP on HPC infrastructure.
+              Engineered cloud-based ingestion pipelines on 1.5 GB+ of
+              healthcare data using DuckDB, Dask, and PyArrow, cutting prep time
+              by 30% and storage by 25–35%. Built a modern ELT pipeline
+              orchestrated via Dagster with SQLMesh transformations and
               schema-validated ingestion using dlt.
             </p>
           </div>
           <div class="about-card card-yellow">
             <p>
-              <strong>Analytics &amp; BI:</strong> Designed interactive dashboards in Tableau and Power BI
-              across transit, healthcare, and cricket analytics use cases, surfacing KPIs from datasets
-              ranging from 900+ matches to 1M+ ridership records. Conducted deep EDA and root cause
-              analysis to deliver stakeholder-ready insights that drove resource allocation and route
-              optimization decisions.
+              <strong>Analytics &amp; BI:</strong> Designed interactive
+              dashboards in Tableau and Power BI across transit, healthcare, and
+              cricket analytics use cases, surfacing KPIs from datasets ranging
+              from 900+ matches to 1M+ ridership records. Conducted deep EDA and
+              root cause analysis to deliver stakeholder-ready insights that
+              drove resource allocation and route optimization decisions.
             </p>
             <p>
-              <strong>ML &amp; Data Science:</strong> Applied NLP and classification workflows for
-              automated feature extraction at scale. Built full-stack data platforms integrating Flask APIs,
-              MongoDB, and React for real-time survey analytics and trend visualization.
+              <strong>ML &amp; Data Science:</strong> Applied NLP and
+              classification workflows for automated feature extraction at
+              scale. Built full-stack data platforms integrating Flask APIs,
+              MongoDB, and React for real-time survey analytics and trend
+              visualization.
             </p>
           </div>
         </div>
@@ -209,8 +217,19 @@
               <div class="tl-title">Data Engineer</div>
               <div class="tl-org">Project 990 · Bloomington, IN</div>
               <ul class="tl-desc">
-                <li>Deployed transformer-based NLP pipelines on IU's HPC cluster to semantically classify 120K+ nonprofit financial records via end-to-end ETL, producing schema-validated feature datasets for downstream ML analytics.</li>
-                <li>Architected a 6-tax-year grant data pipeline in Alteryx and Python; fixed a silent date assignment bug via year-partitioned logic, cut redundant DB fetches by 3–4x with lookup caching, and replaced row-by-row SQL with batched writes.</li>
+                <li>
+                  Deployed transformer-based NLP pipelines on IU's HPC cluster
+                  to semantically classify 120K+ nonprofit financial records via
+                  end-to-end ETL, producing schema-validated feature datasets
+                  for downstream ML analytics.
+                </li>
+                <li>
+                  Architected a 6-tax-year grant data pipeline in Alteryx and
+                  Python; fixed a silent date assignment bug via
+                  year-partitioned logic, cut redundant DB fetches by 3–4x with
+                  lookup caching, and replaced row-by-row SQL with batched
+                  writes.
+                </li>
               </ul>
               <div class="tl-metrics">
                 <div class="tl-metric">
@@ -234,8 +253,19 @@
               <div class="tl-title">Research Assistant</div>
               <div class="tl-org">Indiana University Bloomington</div>
               <ul class="tl-desc">
-                <li>Engineered scalable ETL pipelines using Python, PyArrow, Dask, and DuckDB to ingest and transform 1.5 GB+ of UK Healthcare data, converting raw files to Parquet/Feather formats — reducing prep time by 30% and storage by 25–35%.</li>
-                <li>Designed automated ingestion systems with schema validation and data quality checks, cutting manual intervention by 40%; delivered root cause analysis on GP Practice workforce allocation and patient registration metrics, surfacing policy-relevant insights for healthcare resource allocation.</li>
+                <li>
+                  Engineered scalable ETL pipelines using Python, PyArrow, Dask,
+                  and DuckDB to ingest and transform 1.5 GB+ of UK Healthcare
+                  data, converting raw files to Parquet/Feather formats —
+                  reducing prep time by 30% and storage by 25–35%.
+                </li>
+                <li>
+                  Designed automated ingestion systems with schema validation
+                  and data quality checks, cutting manual intervention by 40%;
+                  delivered root cause analysis on GP Practice workforce
+                  allocation and patient registration metrics, surfacing
+                  policy-relevant insights for healthcare resource allocation.
+                </li>
               </ul>
               <div class="tl-metrics">
                 <div class="tl-metric">
@@ -264,10 +294,22 @@
                 <span class="pill-done">Full Time · 8 mo</span>
               </div>
               <div class="tl-title">Software Engineer</div>
-              <div class="tl-org">Cognizant Technology Solutions · Bengaluru</div>
+              <div class="tl-org">
+                Cognizant Technology Solutions · Bengaluru
+              </div>
               <ul class="tl-desc">
-                <li>Built and maintained Python/SQL ETL workflows to extract, clean, and normalize large enterprise datasets, improving data quality by 40% and reducing pipeline prep time by 30% for downstream BI and reporting systems.</li>
-                <li>Developed automated Power BI reporting pipelines and data models enabling self-serve KPI access across business units; performed root cause analysis on data anomalies to ensure pipeline reliability and data integrity.</li>
+                <li>
+                  Built and maintained Python/SQL ETL workflows to extract,
+                  clean, and normalize large enterprise datasets, improving data
+                  quality by 40% and reducing pipeline prep time by 30% for
+                  downstream BI and reporting systems.
+                </li>
+                <li>
+                  Developed automated Power BI reporting pipelines and data
+                  models enabling self-serve KPI access across business units;
+                  performed root cause analysis on data anomalies to ensure
+                  pipeline reliability and data integrity.
+                </li>
               </ul>
               <div class="tl-metrics">
                 <div class="tl-metric">
@@ -297,8 +339,14 @@
             <div class="pc-body">
               <div class="pc-title">IPL Cricket Analytics Dashboard</div>
               <ul class="pc-desc">
-                <li>Replaced manual ETL with dlt + Polars → DuckDB pipeline for 17 years of IPL data, cutting prep overhead by ~40%.</li>
-                <li>Orchestrated SQLMesh transformations via Dagster; published Tableau dashboard surfacing KPIs across 900+ matches.</li>
+                <li>
+                  Replaced manual ETL with dlt + Polars → DuckDB pipeline for 17
+                  years of IPL data, cutting prep overhead by ~40%.
+                </li>
+                <li>
+                  Orchestrated SQLMesh transformations via Dagster; published
+                  Tableau dashboard surfacing KPIs across 900+ matches.
+                </li>
               </ul>
               <div class="pc-tech">
                 <span class="tech-tag">Python</span
@@ -309,7 +357,13 @@
                 ><span class="tech-tag">Dagster</span
                 ><span class="tech-tag">Tableau</span>
               </div>
-              <a href="https://github.com/Shash010/IPL_Analytics" class="pc-link" target="_blank" rel="noopener">View on GitHub →</a>
+              <a
+                href="https://github.com/Shash010/IPL_Analytics"
+                class="pc-link"
+                target="_blank"
+                rel="noopener"
+                >View on GitHub →</a
+              >
             </div>
           </div>
 
@@ -321,8 +375,15 @@
             <div class="pc-body">
               <div class="pc-title">IndyGO Ridership Analytics Dashboard</div>
               <ul class="pc-desc">
-                <li>Analyzed 1M+ ridership records with Pandas + SQL to surface KPIs on coverage gaps, peak demand, and route utilization.</li>
-                <li>Automated preprocessing cut prep time by 30%; Power BI dashboard drove strategic route optimization for transit teams.</li>
+                <li>
+                  Analyzed 1M+ ridership records with Pandas + SQL to surface
+                  KPIs on coverage gaps, peak demand, and route utilization.
+                </li>
+                <li>
+                  Automated preprocessing cut prep time by 30%; Power BI
+                  dashboard drove strategic route optimization for transit
+                  teams.
+                </li>
               </ul>
               <div class="pc-tech">
                 <span class="tech-tag">Python</span
@@ -331,7 +392,13 @@
                 ><span class="tech-tag">Power BI</span
                 ><span class="tech-tag">Excel</span>
               </div>
-              <a href="https://github.com/Shash010/IndyGO_Ridership_Analytics_Dashboard" class="pc-link" target="_blank" rel="noopener">View on GitHub →</a>
+              <a
+                href="https://github.com/Shash010/IndyGO_Ridership_Analytics_Dashboard"
+                class="pc-link"
+                target="_blank"
+                rel="noopener"
+                >View on GitHub →</a
+              >
             </div>
           </div>
 
@@ -343,8 +410,15 @@
             <div class="pc-body">
               <div class="pc-title">MindStat: Mental Health Data Platform</div>
               <ul class="pc-desc">
-                <li>Built a full-stack platform (Flask + MongoDB + React) for secure real-time mental health survey collection and analytics.</li>
-                <li>Automated ingestion and dashboard refresh pipelines to surface behavioral trends across user groups.</li>
+                <li>
+                  Built a full-stack platform (Flask + MongoDB + React) for
+                  secure real-time mental health survey collection and
+                  analytics.
+                </li>
+                <li>
+                  Automated ingestion and dashboard refresh pipelines to surface
+                  behavioral trends across user groups.
+                </li>
               </ul>
               <div class="pc-tech">
                 <span class="tech-tag">Python</span
@@ -352,7 +426,13 @@
                 ><span class="tech-tag">Flask</span
                 ><span class="tech-tag">React</span>
               </div>
-              <a href="https://github.com/Shash010/Mindstat" class="pc-link" target="_blank" rel="noopener">View on GitHub →</a>
+              <a
+                href="https://github.com/Shash010/Mindstat"
+                class="pc-link"
+                target="_blank"
+                rel="noopener"
+                >View on GitHub →</a
+              >
             </div>
           </div>
 
@@ -364,8 +444,17 @@
             <div class="pc-body">
               <div class="pc-title">World Happiness EDA</div>
               <ul class="pc-desc">
-                <li>Analysed 2,199 records across 150+ countries (2005–2022); engineered a correlation pipeline revealing GDP per capita (0.78) and social support (0.72) as the strongest happiness predictors.</li>
-                <li>Built 6 visualisations — choropleth map, regional comparisons, and time-series trends — surfacing Nordic dominance and a gradual upward global happiness trajectory.</li>
+                <li>
+                  Analysed 2,199 records across 150+ countries (2005–2022);
+                  engineered a correlation pipeline revealing GDP per capita
+                  (0.78) and social support (0.72) as the strongest happiness
+                  predictors.
+                </li>
+                <li>
+                  Built 6 visualisations — choropleth map, regional comparisons,
+                  and time-series trends — surfacing Nordic dominance and a
+                  gradual upward global happiness trajectory.
+                </li>
               </ul>
               <div class="pc-tech">
                 <span class="tech-tag">Python</span
@@ -375,7 +464,13 @@
                 ><span class="tech-tag">Seaborn</span
                 ><span class="tech-tag">Plotly</span>
               </div>
-              <a href="https://github.com/Shash010/World_Happiness_EDAProject" class="pc-link" target="_blank" rel="noopener">View on GitHub →</a>
+              <a
+                href="https://github.com/Shash010/World_Happiness_EDAProject"
+                class="pc-link"
+                target="_blank"
+                rel="noopener"
+                >View on GitHub →</a
+              >
             </div>
           </div>
 
@@ -385,10 +480,20 @@
               <span class="pc-date">Spring 2026</span>
             </div>
             <div class="pc-body">
-              <div class="pc-title">LaunchIt — AI Business Formalization Platform</div>
+              <div class="pc-title">
+                LaunchIt — AI Business Formalization Platform
+              </div>
               <ul class="pc-desc">
-                <li>Built a React + Node.js platform with 10+ auth-protected routes — AI chat, document generation, income tracking, and compliance checklists — backed by PostgreSQL.</li>
-                <li>Integrated Claude API for multi-turn conversational onboarding, auto-detecting business type from context and persisting session history for continuity.</li>
+                <li>
+                  Built a React + Node.js platform with 10+ auth-protected
+                  routes — AI chat, document generation, income tracking, and
+                  compliance checklists — backed by PostgreSQL.
+                </li>
+                <li>
+                  Integrated Claude API for multi-turn conversational
+                  onboarding, auto-detecting business type from context and
+                  persisting session history for continuity.
+                </li>
               </ul>
               <div class="pc-tech">
                 <span class="tech-tag">TypeScript</span
@@ -398,7 +503,13 @@
                 ><span class="tech-tag">Claude API</span
                 ><span class="tech-tag">REST API</span>
               </div>
-              <a href="https://github.com/Shash010/Launch-It" class="pc-link" target="_blank" rel="noopener">View on GitHub →</a>
+              <a
+                href="https://github.com/Shash010/Launch-It"
+                class="pc-link"
+                target="_blank"
+                rel="noopener"
+                >View on GitHub →</a
+              >
             </div>
           </div>
 
@@ -408,10 +519,21 @@
               <span class="pc-date">Spring 2026</span>
             </div>
             <div class="pc-body">
-              <div class="pc-title">Real-Time Transit App — Bloomington Transit</div>
+              <div class="pc-title">
+                Real-Time Transit App — Bloomington Transit
+              </div>
               <ul class="pc-desc">
-                <li>Consumed 3 live GTFS Realtime .pb feeds via AWS S3 (10s polling); joined static GTFS with live data on shared keys to compute real-time ETAs on an interactive map with live bus markers.</li>
-                <li>Led a 3-team parallel build under a 24-hour hackathon — shared data models defined upfront enabled independent delivery of map, parsing, and realtime layers with minimal friction.</li>
+                <li>
+                  Consumed 3 live GTFS Realtime .pb feeds via AWS S3 (10s
+                  polling); joined static GTFS with live data on shared keys to
+                  compute real-time ETAs on an interactive map with live bus
+                  markers.
+                </li>
+                <li>
+                  Led a 3-team parallel build under a 24-hour hackathon — shared
+                  data models defined upfront enabled independent delivery of
+                  map, parsing, and realtime layers with minimal friction.
+                </li>
               </ul>
               <div class="pc-tech">
                 <span class="tech-tag">React Native</span
@@ -448,7 +570,9 @@
             <div class="edu-num">BE</div>
             <div class="edu-degree">B.E. in Telecommunication Engineering</div>
             <div class="edu-school">Visvesvaraya Technological University</div>
-            <div class="edu-period">Sir M Visvesvaraya Institute of Technology · Graduated July 2022</div>
+            <div class="edu-period">
+              Sir M Visvesvaraya Institute of Technology · Graduated July 2022
+            </div>
             <div class="edu-tags">
               <span class="chip chip-black">GPA 8.75 / 10.0</span>
               <span class="chip chip-black">Bengaluru, India</span>
@@ -504,26 +628,69 @@
               <span class="ch-arrow">→</span>
             </a>
           </div>
-          <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="37bf1e21-6ff2-4686-9399-cd1cdbd4e496" />
-            <input type="hidden" name="subject" value="Portfolio Contact — New Message" />
-            <input type="checkbox" name="botcheck" style="display:none" />
+          <form
+            class="contact-form"
+            id="contact-form"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="37bf1e21-6ff2-4686-9399-cd1cdbd4e496"
+            />
+            <input
+              type="hidden"
+              name="subject"
+              value="Portfolio Contact — New Message"
+            />
+            <input type="checkbox" name="botcheck" style="display: none" />
             <div>
               <label class="form-label">Your Name</label>
-              <input type="text" name="name" class="form-input" placeholder="Jane Recruiter" required />
+              <input
+                type="text"
+                name="name"
+                class="form-input"
+                placeholder="Jane Recruiter"
+                required
+              />
             </div>
             <div>
               <label class="form-label">Your Email</label>
-              <input type="email" name="email" class="form-input" placeholder="jane@company.com" required />
+              <input
+                type="email"
+                name="email"
+                class="form-input"
+                placeholder="jane@company.com"
+                required
+              />
             </div>
             <div>
               <label class="form-label">Message</label>
-              <textarea name="message" class="form-textarea" placeholder="Tell me about the opportunity..." required></textarea>
+              <textarea
+                name="message"
+                class="form-textarea"
+                placeholder="Tell me about the opportunity..."
+                required
+              ></textarea>
             </div>
-            <button type="submit" class="btn-primary" id="submit-btn" style="width:100%;cursor:pointer;border:none">
+            <button
+              type="submit"
+              class="btn-primary"
+              id="submit-btn"
+              style="width: 100%; cursor: pointer; border: none"
+            >
               Send Message →
             </button>
-            <p id="form-status" style="display:none;margin-top:14px;font-weight:700;font-size:14px;"></p>
+            <p
+              id="form-status"
+              style="
+                display: none;
+                margin-top: 14px;
+                font-weight: 700;
+                font-size: 14px;
+              "
+            ></p>
           </form>
         </div>
       </section>

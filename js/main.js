@@ -1,4 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Photo upload preview
+  const upload = document.getElementById('photo-upload');
+  if (upload) {
+    upload.addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = (ev) => {
+        const preview = document.getElementById('photo-preview');
+        const label = document.getElementById('photo-label');
+        preview.src = ev.target.result;
+        preview.style.display = 'block';
+        label.style.display = 'none';
+      };
+      reader.readAsDataURL(file);
+    });
+  }
+
   // Contact form submission
   const form = document.getElementById('contact-form');
   if (form) {
