@@ -298,18 +298,16 @@ section {
 
 .idc-photo-placeholder {
   width: 100%;
-  height: 300px;
   background: var(--bg);
   border: 2px dashed var(--black);
-  display: grid;
-  place-items: center;
   margin-bottom: 18px;
   overflow: hidden;
-  position: relative;
 }
 
 .idc-photo-placeholder img {
-  object-position: center 10%;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .idc-photo-label {
