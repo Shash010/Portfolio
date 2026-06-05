@@ -742,6 +742,9 @@ ul.tl-desc li {
 .banner-orange { background: #FF6600; }
 .banner-orange .pc-num  { color: var(--white); }
 .banner-orange .pc-date { color: rgba(255,255,255,0.7); border-color: rgba(255,255,255,0.4); background: transparent; }
+.banner-purple { background: #6D28D9; }
+.banner-purple .pc-num  { color: #C4B5FD; }
+.banner-purple .pc-date { color: rgba(255,255,255,0.7); border-color: rgba(255,255,255,0.4); background: transparent; }
 
 .pc-num {
   font-family: var(--font-display);
