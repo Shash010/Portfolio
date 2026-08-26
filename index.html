@@ -124,6 +124,7 @@
               <span class="chip">SQL</span>
               <span class="chip">R</span>
               <span class="chip">Bash</span>
+              <span class="chip">JavaScript</span>
               <span class="chip">PostgreSQL</span>
               <span class="chip">NoSQL</span>
               <span class="chip">MongoDB</span>
@@ -133,6 +134,7 @@
             <div class="skill-cat-label">Data Engineering</div>
             <div class="skill-chips">
               <span class="chip">dlt</span>
+              <span class="chip">Alteryx</span>
               <span class="chip">Polars</span>
               <span class="chip">PySpark</span>
               <span class="chip">PyArrow</span>
@@ -143,15 +145,21 @@
               <span class="chip">Dask</span>
               <span class="chip">Pandas</span>
               <span class="chip">NumPy</span>
+              <span class="chip">Supabase</span>
+              <span class="chip">GitHub Actions</span>
+              <span class="chip">HPC / Slurm</span>
+              <span class="chip">API Integration</span>
             </div>
           </div>
           <div class="skill-cat">
             <div class="skill-cat-label">Cloud &amp; Storage</div>
             <div class="skill-chips">
+              <span class="chip">AWS</span>
               <span class="chip">GCP</span>
               <span class="chip">BigQuery</span>
               <span class="chip">Cloud Storage</span>
               <span class="chip">Snowflake</span>
+              <span class="chip">Databricks</span>
               <span class="chip">Parquet</span>
               <span class="chip">Feather</span>
             </div>
@@ -161,18 +169,28 @@
             <div class="skill-chips">
               <span class="chip">Power BI</span>
               <span class="chip">Tableau</span>
+              <span class="chip">Streamlit</span>
+              <span class="chip">Plotly</span>
               <span class="chip">Matplotlib</span>
               <span class="chip">Seaborn</span>
               <span class="chip">Excel</span>
+              <span class="chip">PowerPoint</span>
             </div>
           </div>
           <div class="skill-cat">
-            <div class="skill-cat-label">Data Science &amp; ML</div>
+            <div class="skill-cat-label">AI &amp; ML</div>
             <div class="skill-chips">
-              <span class="chip">Scikit-learn</span>
-              <span class="chip">Statistical Analysis</span>
-              <span class="chip">Regression Modeling</span>
+              <span class="chip">LLMs</span>
+              <span class="chip">Transformer Models</span>
+              <span class="chip">Multi-Agent Systems</span>
+              <span class="chip">CrewAI</span>
+              <span class="chip">Groq / Llama</span>
+              <span class="chip">Gemini</span>
+              <span class="chip">Prompt Engineering</span>
               <span class="chip">NLP</span>
+              <span class="chip">Clustering</span>
+              <span class="chip">Scikit-learn</span>
+              <span class="chip">Regression Modeling</span>
               <span class="chip">Classification</span>
             </div>
           </div>
@@ -182,9 +200,14 @@
               <span class="chip">Git</span>
               <span class="chip">Docker</span>
               <span class="chip">SQLMesh</span>
+              <span class="chip">CRON</span>
               <span class="chip">ETL/ELT</span>
               <span class="chip">Data Quality</span>
               <span class="chip">Schema Validation</span>
+              <span class="chip">Anomaly Detection</span>
+              <span class="chip">Fault-Tolerant Ingestion</span>
+              <span class="chip">Automated Regression Testing</span>
+              <span class="chip">Root Cause Analysis</span>
               <span class="chip">Data Governance</span>
             </div>
           </div>
@@ -206,27 +229,21 @@
                 <span class="tl-year">2026</span>
                 <span class="pill-active">● ACTIVE</span>
               </div>
-              <div class="tl-title">Data Engineer</div>
-              <div class="tl-org">Project 990 · Bloomington, IN</div>
+              <div class="tl-title">AI Data Engineer</div>
+              <div class="tl-org">Project 990 Inc. · Remote</div>
               <ul class="tl-desc">
-                <li>
-                  Deployed transformer-based NLP pipelines on IU's HPC cluster
-                  to semantically classify 120K+ nonprofit financial records via
-                  end-to-end ETL, producing schema-validated feature datasets
-                  for downstream ML analytics.
-                </li>
-                <li>
-                  Architected a 6-tax-year grant data pipeline in Alteryx and
-                  Python; fixed a silent date assignment bug via
-                  year-partitioned logic, cut redundant DB fetches by 3–4x with
-                  lookup caching, and replaced row-by-row SQL with batched
-                  writes.
-                </li>
+                <li>Architected a data pipeline replacing 3 legacy Alteryx workflows, processing ~6.4M nonprofit grant records from IRS Form 990/990PF filings across 6 years (2018–2023) on an HPC cluster (Slurm).</li>
+                <li>Built EIN-resolution and NTEE classification logic to verify grant transactions across nonprofit foundations, enabling downstream research on funding flows.</li>
+                <li>Engineered an AI-powered NLP pipeline auto-generating mission statements for 250K+ nonprofit foundations from 16M+ tax filing records using hybrid clustering and LLM architecture.</li>
               </ul>
               <div class="tl-metrics">
                 <div class="tl-metric">
-                  <span class="tm-num">120K+</span>
-                  <span class="tm-lbl">Records Classified</span>
+                  <span class="tm-num">6.4M+</span>
+                  <span class="tm-lbl">Records Processed</span>
+                </div>
+                <div class="tl-metric">
+                  <span class="tm-num">250K+</span>
+                  <span class="tm-lbl">Foundations Tagged</span>
                 </div>
               </div>
             </div>
@@ -245,32 +262,17 @@
               <div class="tl-title">Research Assistant</div>
               <div class="tl-org">Indiana University Bloomington</div>
               <ul class="tl-desc">
-                <li>
-                  Engineered scalable ETL pipelines using Python, PyArrow, Dask,
-                  and DuckDB to ingest and transform 1.5 GB+ of UK Healthcare
-                  data, converting raw files to Parquet/Feather formats —
-                  reducing prep time by 30% and storage by 25–35%.
-                </li>
-                <li>
-                  Designed automated ingestion systems with schema validation
-                  and data quality checks, cutting manual intervention by 40%;
-                  delivered root cause analysis on GP Practice workforce
-                  allocation and patient registration metrics, surfacing
-                  policy-relevant insights for healthcare resource allocation.
-                </li>
+                <li>Built an end-to-end longitudinal healthcare pipeline integrating CQC + NHS datasets across 11 years (2014–2025) to create a GP practice-month panel tracking ownership, patient volumes, and transitions.</li>
+                <li>Developed entity-matching, time-series aggregation, and change-detection workflows across 4 ownership categories to quantify monthly shifts in patient and practice share.</li>
               </ul>
               <div class="tl-metrics">
                 <div class="tl-metric">
-                  <span class="tm-num">1.5GB+</span>
-                  <span class="tm-lbl">Data Processed</span>
+                  <span class="tm-num">11 yrs</span>
+                  <span class="tm-lbl">Data Integrated</span>
                 </div>
                 <div class="tl-metric">
-                  <span class="tm-num">-30%</span>
-                  <span class="tm-lbl">Prep Time</span>
-                </div>
-                <div class="tl-metric">
-                  <span class="tm-num">-40%</span>
-                  <span class="tm-lbl">Manual Work</span>
+                  <span class="tm-num">2</span>
+                  <span class="tm-lbl">National Datasets</span>
                 </div>
               </div>
             </div>
@@ -286,31 +288,15 @@
                 <span class="pill-done">Full Time · 8 mo</span>
               </div>
               <div class="tl-title">Software Engineer</div>
-              <div class="tl-org">
-                Cognizant Technology Solutions · Bengaluru
-              </div>
+              <div class="tl-org">Cognizant Technology Solutions · Bengaluru</div>
               <ul class="tl-desc">
-                <li>
-                  Built and maintained Python/SQL ETL workflows to extract,
-                  clean, and normalize large enterprise datasets, improving data
-                  quality by 40% and reducing pipeline prep time by 30% for
-                  downstream BI and reporting systems.
-                </li>
-                <li>
-                  Developed automated Power BI reporting pipelines and data
-                  models enabling self-serve KPI access across business units;
-                  performed root cause analysis on data anomalies to ensure
-                  pipeline reliability and data integrity.
-                </li>
+                <li>Monitored nightly/monthly batch systems (LIBRA and RAPID) handling commercial insurance billing for Liberty Mutual across mainframe, midrange, and distributed environments for 30+ business clients.</li>
+                <li>Designed CRON-scheduled automated regression testing for daily/monthly batch pipelines, catching data failures pre-production and directly reducing billing incidents.</li>
               </ul>
               <div class="tl-metrics">
                 <div class="tl-metric">
-                  <span class="tm-num">+40%</span>
-                  <span class="tm-lbl">Data Quality</span>
-                </div>
-                <div class="tl-metric">
-                  <span class="tm-num">-30%</span>
-                  <span class="tm-lbl">Prep Time</span>
+                  <span class="tm-num">30+</span>
+                  <span class="tm-lbl">Business Clients</span>
                 </div>
               </div>
             </div>
