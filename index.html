@@ -155,9 +155,6 @@
             <div class="skill-cat-label">Cloud &amp; Storage</div>
             <div class="skill-chips">
               <span class="chip">AWS</span>
-              <span class="chip">GCP</span>
-              <span class="chip">BigQuery</span>
-              <span class="chip">Cloud Storage</span>
               <span class="chip">Snowflake</span>
               <span class="chip">Databricks</span>
               <span class="chip">Parquet</span>
@@ -309,130 +306,42 @@
         <div class="sec-eyebrow">04 — Projects</div>
         <h2 class="sec-title">Key <em>Projects</em></h2>
         <div class="projects-grid">
+
+          <!-- P-01: ShoalSight — Fall 2026 -->
           <div class="project-card">
-            <div class="pc-banner banner-yellow">
+            <div class="pc-banner banner-teal">
               <div class="pc-num">P—01</div>
-              <span class="pc-date">Spring 2026</span>
+              <span class="pc-date">Fall 2026</span>
             </div>
             <div class="pc-body">
-              <div class="pc-title">IPL Cricket Analytics Dashboard</div>
+              <div class="pc-title">ShoalSight — Mississippi River Risk Monitor</div>
               <ul class="pc-desc">
-                <li>
-                  Replaced manual ETL with dlt + Polars → DuckDB pipeline for 17
-                  years of IPL data, cutting prep overhead by ~40%.
-                </li>
-                <li>
-                  Orchestrated SQLMesh transformations via Dagster; published
-                  Tableau dashboard surfacing KPIs across 900+ matches.
-                </li>
+                <li>Automated daily ETL ingesting USGS gauge + weather data into Supabase via GitHub Actions; z-score anomaly model flagged 2022–2023 droughts with 58-day early warning.</li>
+                <li>Layered a JSON-schema-constrained Gemini LLM for cited risk narratives, served via Streamlit/Plotly dashboard covering ~95% of U.S. corn and soybean export routes.</li>
               </ul>
               <div class="pc-tech">
                 <span class="tech-tag">Python</span
-                ><span class="tech-tag">dlt</span
-                ><span class="tech-tag">Polars</span
-                ><span class="tech-tag">DuckDB</span
-                ><span class="tech-tag">SQLMesh</span
-                ><span class="tech-tag">Dagster</span
-                ><span class="tech-tag">Tableau</span>
+                ><span class="tech-tag">GitHub Actions</span
+                ><span class="tech-tag">Supabase</span
+                ><span class="tech-tag">Gemini LLM</span
+                ><span class="tech-tag">Streamlit</span
+                ><span class="tech-tag">Plotly</span>
               </div>
-              <a
-                href="https://github.com/Shash010/IPL_Analytics"
-                class="pc-link"
-                target="_blank"
-                rel="noopener"
-                >View on GitHub →</a
-              >
+              <a href="https://github.com/Shash010/Mississippi_River_Chokepoint_Monitor" class="pc-link" target="_blank" rel="noopener">View on GitHub →</a>
             </div>
           </div>
 
-          <div class="project-card">
-            <div class="pc-banner banner-pink">
-              <div class="pc-num">P—02</div>
-              <span class="pc-date">Spring 2025</span>
-            </div>
-            <div class="pc-body">
-              <div class="pc-title">IndyGO Ridership Analytics Dashboard</div>
-              <ul class="pc-desc">
-                <li>
-                  Analyzed 1M+ ridership records with Pandas + SQL to surface
-                  KPIs on coverage gaps, peak demand, and route utilization.
-                </li>
-                <li>
-                  Automated preprocessing cut prep time by 30%; Power BI
-                  dashboard drove strategic route optimization for transit
-                  teams.
-                </li>
-              </ul>
-              <div class="pc-tech">
-                <span class="tech-tag">Python</span
-                ><span class="tech-tag">Pandas</span
-                ><span class="tech-tag">NumPy</span
-                ><span class="tech-tag">Power BI</span
-                ><span class="tech-tag">Excel</span>
-              </div>
-              <a
-                href="https://github.com/Shash010/IndyGO_Ridership_Analytics_Dashboard"
-                class="pc-link"
-                target="_blank"
-                rel="noopener"
-                >View on GitHub →</a
-              >
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="pc-banner banner-cyan">
-              <div class="pc-num">P—03</div>
-              <span class="pc-date">Spring 2025</span>
-            </div>
-            <div class="pc-body">
-              <div class="pc-title">MindStat: Mental Health Data Platform</div>
-              <ul class="pc-desc">
-                <li>
-                  Built a full-stack platform (Flask + MongoDB + React) for
-                  secure real-time mental health survey collection and
-                  analytics.
-                </li>
-                <li>
-                  Automated ingestion and dashboard refresh pipelines to surface
-                  behavioral trends across user groups.
-                </li>
-              </ul>
-              <div class="pc-tech">
-                <span class="tech-tag">Python</span
-                ><span class="tech-tag">MongoDB</span
-                ><span class="tech-tag">Flask</span
-                ><span class="tech-tag">React</span>
-              </div>
-              <a
-                href="https://github.com/Shash010/Mindstat"
-                class="pc-link"
-                target="_blank"
-                rel="noopener"
-                >View on GitHub →</a
-              >
-            </div>
-          </div>
-
+          <!-- P-02: World Happiness EDA — Summer 2026 -->
           <div class="project-card">
             <div class="pc-banner banner-black">
-              <div class="pc-num">P—04</div>
+              <div class="pc-num">P—02</div>
               <span class="pc-date">Summer 2026</span>
             </div>
             <div class="pc-body">
               <div class="pc-title">World Happiness EDA</div>
               <ul class="pc-desc">
-                <li>
-                  Analysed 2,199 records across 150+ countries (2005–2022);
-                  engineered a correlation pipeline revealing GDP per capita
-                  (0.78) and social support (0.72) as the strongest happiness
-                  predictors.
-                </li>
-                <li>
-                  Built 6 visualisations — choropleth map, regional comparisons,
-                  and time-series trends — surfacing Nordic dominance and a
-                  gradual upward global happiness trajectory.
-                </li>
+                <li>Analysed 2,199 records across 150+ countries (2005–2022); engineered a correlation pipeline revealing GDP per capita (0.78) and social support (0.72) as the strongest happiness predictors.</li>
+                <li>Built 6 visualisations — choropleth map, regional comparisons, and time-series trends — surfacing Nordic dominance and a gradual upward global happiness trajectory.</li>
               </ul>
               <div class="pc-tech">
                 <span class="tech-tag">Python</span
@@ -442,92 +351,14 @@
                 ><span class="tech-tag">Seaborn</span
                 ><span class="tech-tag">Plotly</span>
               </div>
-              <a
-                href="https://github.com/Shash010/World_Happiness_EDAProject"
-                class="pc-link"
-                target="_blank"
-                rel="noopener"
-                >View on GitHub →</a
-              >
+              <a href="https://github.com/Shash010/World_Happiness_EDAProject" class="pc-link" target="_blank" rel="noopener">View on GitHub →</a>
             </div>
           </div>
 
-          <div class="project-card">
-            <div class="pc-banner banner-lime">
-              <div class="pc-num">P—05</div>
-              <span class="pc-date">Spring 2026</span>
-            </div>
-            <div class="pc-body">
-              <div class="pc-title">
-                LaunchIt — AI Business Formalization Platform
-              </div>
-              <ul class="pc-desc">
-                <li>
-                  Built a React + Node.js platform with 10+ auth-protected
-                  routes — AI chat, document generation, income tracking, and
-                  compliance checklists — backed by PostgreSQL.
-                </li>
-                <li>
-                  Integrated Claude API for multi-turn conversational
-                  onboarding, auto-detecting business type from context and
-                  persisting session history for continuity.
-                </li>
-              </ul>
-              <div class="pc-tech">
-                <span class="tech-tag">TypeScript</span
-                ><span class="tech-tag">React</span
-                ><span class="tech-tag">Node.js</span
-                ><span class="tech-tag">PostgreSQL</span
-                ><span class="tech-tag">Claude API</span
-                ><span class="tech-tag">REST API</span>
-              </div>
-              <a
-                href="https://github.com/Shash010/Launch-It"
-                class="pc-link"
-                target="_blank"
-                rel="noopener"
-                >View on GitHub →</a
-              >
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="pc-banner banner-orange">
-              <div class="pc-num">P—06</div>
-              <span class="pc-date">Spring 2026</span>
-            </div>
-            <div class="pc-body">
-              <div class="pc-title">
-                Real-Time Transit App — Bloomington Transit
-              </div>
-              <ul class="pc-desc">
-                <li>
-                  Consumed 3 live GTFS Realtime .pb feeds via AWS S3 (10s
-                  polling); joined static GTFS with live data on shared keys to
-                  compute real-time ETAs on an interactive map with live bus
-                  markers.
-                </li>
-                <li>
-                  Led a 3-team parallel build under a 24-hour hackathon — shared
-                  data models defined upfront enabled independent delivery of
-                  map, parsing, and realtime layers with minimal friction.
-                </li>
-              </ul>
-              <div class="pc-tech">
-                <span class="tech-tag">React Native</span
-                ><span class="tech-tag">Expo</span
-                ><span class="tech-tag">JavaScript</span
-                ><span class="tech-tag">GTFS Realtime</span
-                ><span class="tech-tag">protobufjs</span
-                ><span class="tech-tag">React Native Maps</span>
-              </div>
-              <a href="https://github.com/nesar-ganguli/realtime-transit-app" class="pc-link" target="_blank" rel="noopener">View on GitHub →</a>
-            </div>
-          </div>
-
+          <!-- P-03: Stock Analysis Agent — Summer 2026 -->
           <div class="project-card">
             <div class="pc-banner banner-purple">
-              <div class="pc-num">P—07</div>
+              <div class="pc-num">P—03</div>
               <span class="pc-date">Summer 2026</span>
             </div>
             <div class="pc-body">
@@ -547,6 +378,125 @@
               <a href="https://github.com/Shash010/Stock_Analysis_Agent" class="pc-link" target="_blank" rel="noopener">View on GitHub →</a>
             </div>
           </div>
+
+          <!-- P-04: IPL Analytics — Spring 2026 -->
+          <div class="project-card">
+            <div class="pc-banner banner-yellow">
+              <div class="pc-num">P—04</div>
+              <span class="pc-date">Spring 2026</span>
+            </div>
+            <div class="pc-body">
+              <div class="pc-title">IPL Cricket Analytics Dashboard</div>
+              <ul class="pc-desc">
+                <li>Replaced manual ETL with dlt + Polars → DuckDB pipeline for 17 years of IPL data, cutting prep overhead by ~40%.</li>
+                <li>Orchestrated SQLMesh transformations via Dagster; published Tableau dashboard surfacing KPIs across 900+ matches.</li>
+              </ul>
+              <div class="pc-tech">
+                <span class="tech-tag">Python</span
+                ><span class="tech-tag">dlt</span
+                ><span class="tech-tag">Polars</span
+                ><span class="tech-tag">DuckDB</span
+                ><span class="tech-tag">SQLMesh</span
+                ><span class="tech-tag">Dagster</span
+                ><span class="tech-tag">Tableau</span>
+              </div>
+              <a href="https://github.com/Shash010/IPL_Analytics" class="pc-link" target="_blank" rel="noopener">View on GitHub →</a>
+            </div>
+          </div>
+
+          <!-- P-05: LaunchIt — Spring 2026 -->
+          <div class="project-card">
+            <div class="pc-banner banner-lime">
+              <div class="pc-num">P—05</div>
+              <span class="pc-date">Spring 2026</span>
+            </div>
+            <div class="pc-body">
+              <div class="pc-title">LaunchIt — AI Business Formalization Platform</div>
+              <ul class="pc-desc">
+                <li>Built a React + Node.js platform with 10+ auth-protected routes — AI chat, document generation, income tracking, and compliance checklists — backed by PostgreSQL.</li>
+                <li>Integrated Claude API for multi-turn conversational onboarding, auto-detecting business type from context and persisting session history for continuity.</li>
+              </ul>
+              <div class="pc-tech">
+                <span class="tech-tag">TypeScript</span
+                ><span class="tech-tag">React</span
+                ><span class="tech-tag">Node.js</span
+                ><span class="tech-tag">PostgreSQL</span
+                ><span class="tech-tag">Claude API</span
+                ><span class="tech-tag">REST API</span>
+              </div>
+              <a href="https://github.com/Shash010/Launch-It" class="pc-link" target="_blank" rel="noopener">View on GitHub →</a>
+            </div>
+          </div>
+
+          <!-- P-06: Real-Time Transit App — Spring 2026 -->
+          <div class="project-card">
+            <div class="pc-banner banner-orange">
+              <div class="pc-num">P—06</div>
+              <span class="pc-date">Spring 2026</span>
+            </div>
+            <div class="pc-body">
+              <div class="pc-title">Real-Time Transit App — Bloomington Transit</div>
+              <ul class="pc-desc">
+                <li>Consumed 3 live GTFS Realtime .pb feeds via AWS S3 (10s polling); joined static GTFS with live data on shared keys to compute real-time ETAs on an interactive map with live bus markers.</li>
+                <li>Led a 3-team parallel build under a 24-hour hackathon — shared data models defined upfront enabled independent delivery of map, parsing, and realtime layers with minimal friction.</li>
+              </ul>
+              <div class="pc-tech">
+                <span class="tech-tag">React Native</span
+                ><span class="tech-tag">Expo</span
+                ><span class="tech-tag">JavaScript</span
+                ><span class="tech-tag">GTFS Realtime</span
+                ><span class="tech-tag">protobufjs</span
+                ><span class="tech-tag">React Native Maps</span>
+              </div>
+              <a href="https://github.com/nesar-ganguli/realtime-transit-app" class="pc-link" target="_blank" rel="noopener">View on GitHub →</a>
+            </div>
+          </div>
+
+          <!-- P-07: IndyGO — Spring 2025 -->
+          <div class="project-card">
+            <div class="pc-banner banner-pink">
+              <div class="pc-num">P—07</div>
+              <span class="pc-date">Spring 2025</span>
+            </div>
+            <div class="pc-body">
+              <div class="pc-title">IndyGO Ridership Analytics Dashboard</div>
+              <ul class="pc-desc">
+                <li>Analyzed 1M+ ridership records with Pandas + SQL to surface KPIs on coverage gaps, peak demand, and route utilization.</li>
+                <li>Automated preprocessing cut prep time by 30%; Power BI dashboard drove strategic route optimization for transit teams.</li>
+              </ul>
+              <div class="pc-tech">
+                <span class="tech-tag">Python</span
+                ><span class="tech-tag">Pandas</span
+                ><span class="tech-tag">NumPy</span
+                ><span class="tech-tag">Power BI</span
+                ><span class="tech-tag">Excel</span>
+              </div>
+              <a href="https://github.com/Shash010/IndyGO_Ridership_Analytics_Dashboard" class="pc-link" target="_blank" rel="noopener">View on GitHub →</a>
+            </div>
+          </div>
+
+          <!-- P-08: MindStat — Spring 2025 -->
+          <div class="project-card">
+            <div class="pc-banner banner-cyan">
+              <div class="pc-num">P—08</div>
+              <span class="pc-date">Spring 2025</span>
+            </div>
+            <div class="pc-body">
+              <div class="pc-title">MindStat: Mental Health Data Platform</div>
+              <ul class="pc-desc">
+                <li>Built a full-stack platform (Flask + MongoDB + React) for secure real-time mental health survey collection and analytics.</li>
+                <li>Automated ingestion and dashboard refresh pipelines to surface behavioral trends across user groups.</li>
+              </ul>
+              <div class="pc-tech">
+                <span class="tech-tag">Python</span
+                ><span class="tech-tag">MongoDB</span
+                ><span class="tech-tag">Flask</span
+                ><span class="tech-tag">React</span>
+              </div>
+              <a href="https://github.com/Shash010/Mindstat" class="pc-link" target="_blank" rel="noopener">View on GitHub →</a>
+            </div>
+          </div>
+
         </div>
       </section>
 
