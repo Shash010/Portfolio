@@ -444,6 +444,16 @@ section {
   grid-template-columns: 1fr;
 }
 
+.about-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 8px;
+}
+
+.about-col p { margin-top: 0; }
+.about-col p + p { margin-top: 14px; }
+
 .about-card {
   border: var(--border);
   padding: 32px;
