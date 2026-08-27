@@ -440,6 +440,10 @@ section {
   gap: 24px;
 }
 
+.about-single {
+  grid-template-columns: 1fr;
+}
+
 .about-card {
   border: var(--border);
   padding: 32px;
